@@ -1,0 +1,55 @@
+body {
+    background: #033949
+}
+
+.header {
+    color: #d4dce4;
+    font-size: 30px;
+    font-family: cursive;
+    margin: 10px;
+}
+
+.menu {
+    margin: 10px;
+    font-size: 13px;
+}
+
+.menu a{
+    color: #a6bbcd;
+    font-family: cursive;
+    text-decoration: none;
+}
+
+h2 {
+    color: #d4dce4;
+    font-size: 19px;
+    font-family: cursive;
+}
+
+p {
+    color: #a6bbcd;
+    font-size: 13px;
+    font-family: cursive;
+}
+
+footer {
+    color: #a6bbcd;
+    font-size: 10px;
+    font-family: cursive;
+}
+
+aside{
+    float: left;
+    width: 200px;
+    height: 298px;
+    margin: 10px;
+}
+
+footer {
+    padding: 6px 5px 6px 5px;
+    font-family: cursive;
+    color: #a6bbcd;
+    font-size: 11px;
+    text-decoration: none;
+}
+
