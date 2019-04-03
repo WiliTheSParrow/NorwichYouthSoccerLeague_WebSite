@@ -47,11 +47,12 @@
 /* --- FOOTER --- */
 
 footer {
+    
     font-family: cursive;
     color: #a6bbcd;
     font-size: 11px;
     width: 1000px;
-    padding: 20px 0px 10px 240px;    
+    padding: 150px 0px 10px 240px;    
 }
 
 footer a {
@@ -83,8 +84,10 @@ body {
     font-size: 15px;
 }
 
-.page_content p {
-    text-indent: 20px;
+.description {
+    
+    margin-left: 260px;
+
 }
 
 .contact_info article {
