@@ -1,24 +1,37 @@
-body {
-    background: #033949
+/* --- PICTURE STYLING --- */
+
+.pic_soccer {
+    padding: 10px 30px 10px 10px;
+    width: 200px;
+    height: 298px;
+    float: left;
+    margin: 5px;
 }
 
-.container {
-    width: 1000px;
-    height: 500px;
-    margin: 0 auto;
-    
+.pic_logo {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
 }
+
+/* --- TOP PART OF WP --- */
 
 .header {
     color: #d4dce4;
     font-size: 30px;
     font-family: cursive;
     margin: 10px;
+    height: 200px;
+}
+
+.home_title{
+    padding: 50px 0px 30px 210px;
 }
 
 .menu {
-    margin: 10px;
-    font-size: 13px;
+    font-size: 14px;
+    padding: 0px 0px 0px 240px;
 }
 
 .menu a {
@@ -26,6 +39,60 @@ body {
     font-family: cursive;
     text-decoration: none;
 }
+
+.separator {
+    color: #d4dce4;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    font-family: cursive;
+    color: #a6bbcd;
+    font-size: 11px;
+    width: 1000px;
+    padding: 20px 0px 10px 240px;    
+}
+
+footer a {
+    text-decoration: none;
+    font-family: cursive;
+    color: #a6bbcd;
+    font-size: 11px;
+}
+
+/* --- BODY & LAYOUT --- */
+
+body {
+    background: #033949
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.page_content {
+    width: 1000px;
+    height: 350px;
+}
+
+.page_content h3 {
+    font-family: cursive;
+    color: #a6bbcd;
+    font-size: 15px;
+}
+
+.page_content p {
+    text-indent: 20px;
+}
+
+.contact_info article {
+    padding: 15px;
+}
+
+/* --- OTHER STYLING ELEMENTS --- */
+
 
 h2 {
     color: #d4dce4;
@@ -39,26 +106,10 @@ p {
     font-family: cursive;
 }
 
-aside {
-    float: left;
-    width: 200px;
-    height: 500px;
-    margin: 10px;
-}
 
-footer {
-    padding: 6px 5px 6px 5px;
-    font-family: cursive;
-    color: #a6bbcd;
-    font-size: 11px;
-    width: 1000px;
-    margin: 0 auto;
+/* ---------------------- */
 
-}
 
-footer a {
-    text-decoration: none;
-    font-family: cursive;
-    color: #a6bbcd;
-    font-size: 11px;
-}
+
+
+
