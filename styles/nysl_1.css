@@ -1,0 +1,57 @@
+.topofthepage {
+    border: 2px solid black;
+}
+
+
+.menusection {
+    border: 2px solid red;
+    float: left;
+}
+
+
+.menusection a {
+    display: block;
+    height: 50px;
+    margin-left: 15px;
+}
+
+
+.content {
+    border: 2px solid green;
+    float: right;
+}
+
+
+.designedby {
+    border: 2px solid purple;
+    clear: both;
+}
+
+/*--- Layout with Contained Floats ---*/
+.layout:before,
+.layout:after {
+    
+    display: table;
+}
+
+.layout:after {
+    clear: both;
+}
+
+.layout {
+    clear: both;
+    *zoom: 10;
+}
+
+section {
+    float: left;
+    margin: 0 1.5%;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 20%;  
+}
+
+/*---  ---*/
