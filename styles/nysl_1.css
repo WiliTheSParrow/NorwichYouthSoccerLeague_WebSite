@@ -25,6 +25,7 @@
 .designedby {
     border: 2px solid purple;
     clear: both;
+   
 }
 
 /*--- Layout with Contained Floats ---*/
@@ -45,13 +46,27 @@
 
 section {
     float: left;
-    margin: 0 1.5%;
-    width: 75%;
+    
+    width: 81%;
 }
 
 aside {
     float: right;
-    width: 20%;  
+    width: 14%;  
 }
 
 /*---  ---*/
+
+.topofthepage article{
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.headerimage {
+    border: 1px solid black;
+    height: 461px;
+    width: 850px;
+    position: absolute;
+    z-index: -1;
+}
