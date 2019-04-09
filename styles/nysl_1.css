@@ -3,7 +3,7 @@ body {
     font-family: cursive;
     color: #bbd18c;
     text-shadow: 1px 3px 8px #000000;
-        
+
 }
 
 
@@ -22,13 +22,13 @@ body {
 .layout {
     clear: both;
     *zoom: 10;
-    
+
 }
 
 section {
     float: left;
     width: 85%;
-    
+
 }
 
 aside {
@@ -92,7 +92,6 @@ aside {
 
 .content {
     float: right;
-   
 }
 
 
@@ -100,22 +99,18 @@ aside {
     padding-left: 16px;
 }
 
-
 .designedby {
-    
     font-size: 10px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
     text-align: center;
-
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #41472a;
 }
 
 
 .designedby a {
     text-decoration: none;
     color: #bbd18c;
-    
 }
