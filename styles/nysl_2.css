@@ -1,0 +1,31 @@
+.topofthepage{
+    display: block;
+}
+
+
+.headertitle {
+    border: 2px solid black;
+}
+
+
+.headerimage{
+    border: 2px solid red;
+}
+
+
+.informationbar article {
+    background: black;
+    color: #fffff0;
+    text-align: center;
+    height: 30px;
+}
+
+.logo{
+    float: left;
+}
+
+.menusection {
+    position: absolute;
+    display: inline;
+   
+}
