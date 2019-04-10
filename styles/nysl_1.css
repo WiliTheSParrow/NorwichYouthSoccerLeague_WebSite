@@ -2,7 +2,7 @@ body {
     background: #41472a;
     font-family: cursive;
     color: #bbd18c;
-    text-shadow: 1px 3px 8px #000000;
+    text-shadow: 1px 4px 8px #000000;
 }
 
 
@@ -37,22 +37,28 @@ aside {
 
 /*---  ---*/
 
+.topofthepage{
+    background: #000000;
+}
 
 .headertitle {
     padding-left: 15px;
     font-size: 37px;
-    position: absolute
+    position: relative;
 }
 
+#thetitle {
+    text-shadow: 10x 40px 10px #000000;
+}
 
-.headerimage {
-    text-align: center;
+.headerimage img {
+    width: 100%;
 }
 
 
 .informationbar article {
     background: black;
-    color: #fffff0;
+    color: #bbd18c;
     text-align: center;
     height: 30px;
 }
@@ -60,15 +66,14 @@ aside {
 
 .logo {
     position: absolute;
-    display: inline;
-    right: 8%;
-    top: 28%;
+    left: 3%;
+    top: 50%;
+    
 }
-
 
 .menusection {
     float: left;
-    margin-top: 20px;
+    margin-top: 5%;
     position: absolute;
 }
 
