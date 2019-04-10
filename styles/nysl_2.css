@@ -1,31 +1,33 @@
 .topofthepage{
+    border: 2px solid pink;
     display: block;
+    left: 0;
+    right: 0;
 }
 
 
 .headertitle {
     border: 2px solid black;
+    font-size: 35px;
 }
 
 
 .headerimage{
     border: 2px solid red;
+    height: 300px;
+    width: 741px;
+    align-items: center;
 }
 
 
 .informationbar article {
     background: black;
-    color: #fffff0;
+    color: #ffffff;
     text-align: center;
-    height: 30px;
 }
 
-.logo{
-    float: left;
-}
-
-.menusection {
-    position: absolute;
-    display: inline;
-   
+.logo {
+    border: 1px solid black;
+    z-index: -1;
+    width: 200px
 }
