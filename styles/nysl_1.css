@@ -37,38 +37,43 @@ aside {
 
 /*---  ---*/
 
-.topofthepage{
+.topofthepage {
+    border: 2px solid yellow;
     background: #000000;
 }
 
 .headertitle {
+    border: 2px solid green;
     padding-left: 15px;
     font-size: 37px;
     position: relative;
 }
 
-#thetitle {
-    text-shadow: 10x 40px 10px #000000;
-}
-
 .headerimage img {
+    border: 2px solid red;
     width: 100%;
 }
 
-
-.informationbar article {
+.informationbar{
+    border: 2px solid purple;
     background: black;
     color: #bbd18c;
     text-align: center;
-    height: 30px;
 }
 
+.headerimage{
+    border: 2px solid pink;
+    width: 100%;
+}
 
 .logo {
-    position: absolute;
+    border: 2px solid blue;
+    width: 11vw;
+    min-width: 70px;
     left: 3%;
-    top: 50%;
-    
+    top: 26vw;
+    position: absolute;
+    box-sizing: border-box;
 }
 
 .menusection {
@@ -89,6 +94,7 @@ aside {
 
 .content {
     float: right;
+    margin-bottom: 10%;
 }
 
 
@@ -103,7 +109,7 @@ aside {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #41472a;
+    background-color: #000000;
 }
 
 
