@@ -38,40 +38,35 @@ aside {
 /*---  ---*/
 
 .topofthepage {
-    border: 2px solid yellow;
     background: #000000;
 }
 
 .headertitle {
-    border: 2px solid green;
     padding-left: 15px;
     font-size: 37px;
     position: relative;
 }
 
 .headerimage img {
-    border: 2px solid red;
     width: 100%;
 }
 
 .informationbar{
-    border: 2px solid purple;
     background: black;
     color: #bbd18c;
     text-align: center;
 }
 
 .headerimage{
-    border: 2px solid pink;
     width: 100%;
+    position: relative;
 }
 
 .logo {
-    border: 2px solid blue;
     width: 11vw;
     min-width: 70px;
-    left: 3%;
-    top: 26vw;
+    left: 2%;
+    top: 22vw;
     position: absolute;
     box-sizing: border-box;
 }
