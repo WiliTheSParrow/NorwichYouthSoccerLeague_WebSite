@@ -37,6 +37,7 @@ aside {
 
 /*---  ---*/
 
+
 .topofthepage {
     background: #000000;
 }
@@ -44,6 +45,7 @@ aside {
 .headertitle {
     padding-left: 15px;
     font-size: 37px;
+    color: #a2fc4a;
     position: relative;
 }
 
@@ -51,13 +53,16 @@ aside {
     width: 100%;
 }
 
-.informationbar{
+.informationbar {
     background: black;
-    color: #bbd18c;
+    color: #a2fc4a;
+    font-size: 22px;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
-.headerimage{
+.headerimage {
     width: 100%;
     position: relative;
 }
@@ -77,7 +82,6 @@ aside {
     position: absolute;
 }
 
-
 .menusection a {
     display: block;
     height: 50px;
@@ -86,15 +90,21 @@ aside {
     color: #bbd18c;
 }
 
-
 .content {
     float: right;
     margin-bottom: 10%;
 }
 
-
 .content p {
-    padding-left: 16px;
+    margin-left: 20px;
+}
+
+#contactinfo {
+    margin-top: 30px;
+}
+
+#contactinfo p {
+    padding-left: 30px;
 }
 
 .designedby {
@@ -107,8 +117,43 @@ aside {
     background-color: #000000;
 }
 
-
 .designedby a {
     text-decoration: none;
     color: #bbd18c;
+}
+
+<<<<<<< HEAD
+#onapage{
+    color: #a2fc4a;
+    text-decoration: underline;
+=======
+<<<<<<< HEAD
+#onapage{
+    color: #a2fc4a;
+    text-decoration: underline;
+=======
+<<<<<<< HEAD
+#onapage{
+    color: #a2fc4a;
+    text-decoration: underline;
+=======
+#onapage {
+    color: #a2fc4a;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+#ruleinfo {
+    font-style: italic;
+    margin-bottom: 3%;
+}
+
+#bold{
+    font-weight: bold;
+>>>>>>> task 3 cont
+>>>>>>> 3rd task part1 cont
+>>>>>>> folyt
 }
