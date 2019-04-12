@@ -1,0 +1,153 @@
+body {
+    background: #41472a;
+    font-family: cursive;
+    color: #bbd18c;
+    text-shadow: 1px 4px 8px #000000;
+}
+
+
+/*--- Layout with Contained Floats ---*/
+
+.layout:before,
+.layout:after {
+
+    display: table;
+}
+
+.layout:after {
+    clear: both;
+}
+
+.layout {
+    clear: both;
+    *zoom: 10;
+
+}
+
+section {
+    float: left;
+    width: 85%;
+
+}
+
+aside {
+    float: right;
+    width: 14%;
+}
+
+/*---  ---*/
+
+
+.topofthepage {
+    background: #000000;
+}
+
+.headertitle {
+    padding-left: 15px;
+    font-size: 37px;
+    color: #a2fc4a;
+    position: relative;
+}
+
+.headerimage img {
+    width: 100%;
+}
+
+.informationbar {
+    background: black;
+    color: #a2fc4a;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.headerimage {
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    width: 11vw;
+    min-width: 70px;
+    left: 2%;
+    top: 22vw;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.menusection {
+    float: left;
+    margin-top: 5%;
+    position: absolute;
+}
+
+.menusection a {
+    display: block;
+    height: 50px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #bbd18c;
+}
+
+.content {
+    float: right;
+    margin-bottom: 10%;
+}
+
+.content p {
+    margin-left: 20px;
+}
+
+#contactinfo {
+    margin-top: 30px;
+}
+
+#contactinfo p {
+    padding-left: 30px;
+}
+
+.designedby {
+    font-size: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+}
+
+.designedby a {
+    text-decoration: none;
+    color: #bbd18c;
+}
+
+<<<<<<< HEAD
+#onapage{
+    color: #a2fc4a;
+    text-decoration: underline;
+=======
+<<<<<<< HEAD
+#onapage{
+    color: #a2fc4a;
+    text-decoration: underline;
+=======
+#onapage {
+    color: #a2fc4a;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+#ruleinfo {
+    font-style: italic;
+    margin-bottom: 3%;
+}
+
+#bold{
+    font-weight: bold;
+>>>>>>> task 3 cont
+>>>>>>> 3rd task part1 cont
+}
