@@ -165,10 +165,41 @@ li {
 
 #othergameinfo p {
     margin-left: 0px;
-    
+
 }
 
 #gameinfocontact p {
     display: inline-block;
-    
+
 }
+
+#gameinfocontact #gameinfoemail {
+    margin-left: 20%;
+}
+
+table {
+    margin-top: 15px;
+}
+
+table th {
+    text-decoration: underline;
+    text-align: left;
+}
+
+table td {
+    width: 20%;
+}
+
+.firstcolumn {
+    padding-left: 3%;
+}
+
+.locationtable caption {
+    text-align: left;
+    font-weight: bold;
+}
+
+.locationfirstcolumn {
+    width: 10%;
+}
+
