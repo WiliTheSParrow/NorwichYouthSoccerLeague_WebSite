@@ -157,3 +157,18 @@ ol {
 li {
     margin-top: 0;
 }
+
+#gameonsat {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#othergameinfo p {
+    margin-left: 0px;
+    
+}
+
+#gameinfocontact p {
+    display: inline-block;
+    
+}
