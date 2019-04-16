@@ -163,6 +163,10 @@ li {
     font-style: italic;
 }
 
+#othergameinfo {
+    margin-top: 30px;
+}
+
 #othergameinfo p {
     margin-left: 0px;
 
@@ -194,6 +198,10 @@ table td {
     padding-left: 3%;
 }
 
+.locationtable {
+    margin-top: 30px;
+}
+
 .locationtable caption {
     text-align: left;
     font-weight: bold;
@@ -202,4 +210,3 @@ table td {
 .locationfirstcolumn {
     width: 10%;
 }
-
