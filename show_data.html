@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>Feedback Sent</title>
+    <link rel="stylesheet" href="styles/nysl_1.css">
+</head>
+
+<body>
+    <header class="topofthepage">
+        <div class="headertitle">Northside Youth Soccer League</div>
+        <div class="headerimage"><img alt="Header image" src="img/design03.jpg">
+            <div class="logo"><img alt="NYSL Logo image" src="img/nysl_logo1.png"></div>
+        </div>
+        <div class="informationbar">Registration Form</div>
+    </header>
+
+    <div class="layout">
+
+        <aside class=menusection>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="rulesandpolicies.html">Rules & policies</a>
+            <a href="gameinfo.html">Game Info</a>
+            <a href="registration.html">Registration</a>
+        </aside>
+
+
+        <section class=content>
+            <p align=center>&nbsp;</p>
+            <h1 align=center>
+                <font size="+1">The following information has been sent as your
+                    feedback:</font>
+            </h1>
+
+            <table border="1" align=center width="226">
+                <tr>
+                    <th align="center">Form Field</th>
+                    <th align="center">Field Value</th>
+                </tr>
+
+                <script language="javascript">
+                    var args = location.search.substr(1).split('&');
+                    for (var i = 0; i < args.length; ++i) {
+                        var parts = args[i].split('=');
+                        if (parts != null) {
+                            var field = parts[0];
+                            var value = parts[1];
+                            if (value == null) {
+                                value = "null"
+                            } else {
+                                value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                            }
+
+                            document.writeln('<tr><td align="center">' + field + '</td>');
+                            document.writeln('<td align="center">' + value + '</td></tr>');
+                        }
+                    }
+
+                </script>
+
+                <noscript>
+                    <tr>
+                        <td>
+                            <p>You need to turn on Javascript in your browser.</p>
+
+                            <p>In Microsoft Internet Explorer 4 or greater:</p>
+                            <ul>
+                                <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+                                <li>Click on the "Security" tab.</li>
+                                <li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+                                    and then click on "Settings...".)</li>
+                                <li>Under "Active scripting" make sure "Enable" is selected.</li>
+                            </ul>
+
+                            <p>In Netscape version 4 or greater:</p>
+                            <ul>
+                                <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+                                <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+                                <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+                                <li>Click the <b>OK</b> button.</li>
+                            </ul>
+
+                        </td>
+                    </tr>
+                </noscript>
+
+            </table>
+
+
+
+        </section>
+
+
+
+    </div>
+
+
+    <div class="designedby">
+        Northside Youth Soccer League Website <span class="separator">|</span> Design by <a href="https://www.linkedin.com/in/wjulia91/" target="_blank">Julia Wilhelm</a>
+    </div>
+
+
+</body>
+
+</html>
