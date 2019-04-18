@@ -210,3 +210,49 @@ table td {
 .locationfirstcolumn {
     width: 10%;
 }
+
+
+.registrationquestion {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.playersdata {
+    margin-top: 2%;
+}
+
+.permission {
+    padding-top: 10px;
+}
+
+.permission a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#permissiontitle {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#signingtheregistration {
+    font-style: italic;
+}
+
+#registratinform fieldset {
+    border: none;
+}
+
+.closequestion {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.positionquestion a {
+    margin-top: 10px;
+}
+
+.positionquestion fieldset {
+    margin-bottom: 10px;
+}
