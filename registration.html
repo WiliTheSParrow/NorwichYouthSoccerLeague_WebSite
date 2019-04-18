@@ -90,6 +90,7 @@
 
                     <label for="firstclosestschool:">First Closest School:</label>
                     <select name="firstclosestschool">
+                        <option value="zero"></option>
                         <option value="AJ Katzenmaier">AJ Katzenmaier</option>
                         <option value="Greenbay">Greenbay</option>
                         <option value="Howard A Yeager">Howard A Yeager</option>
@@ -100,6 +101,7 @@
 
                     <label for="secondclosestschool:">Second Closest School:</label>
                     <select name="secondclosestschool">
+                        <option value="zero"></option>
                         <option value="AJ Katzenmaier">AJ Katzenmaier</option>
                         <option value="Greenbay">Greenbay</option>
                         <option value="Howard A Yeager">Howard A Yeager</option>
@@ -124,7 +126,7 @@
                     <input type="checkbox" name="Goalkeeper" value="Goalkeeper">
                     <label for="Goalkeeper">Goalkeeper</label>
                 </fieldset>
-                
+
                 <a>What position(s) do you want to play? (check all that apply)</a>
                 <fieldset>
                     <input type="checkbox" name="Forward" value="Forward">
@@ -139,9 +141,57 @@
                     <input type="checkbox" name="Goalkeeper" value="Goalkeeper">
                     <label for="Goalkeeper">Goalkeeper</label>
                 </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="uniform" value="yes">
+                    <label for="uniform">Already Have a Uniform</label>
+                </fieldset>
 
+                <fieldset>
 
-                <button name="submit">submit</button>
+                    <label for="jerseysize">Jersey Size:</label>
+                    <select name="jerseysize">
+                        <option value="zero"></option>
+                        <option value="Youth Small">Youth Small</option>
+                        <option value="Youth Medium">Youth Medium</option>
+                        <option value="Youth Large">Youth Large</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="Extra-Large">Extra-Large</option>
+                    </select>
+
+                    <label for="shortsize">Shorts Size:</label>
+                    <select name="shortsize">
+                        <option value="zero"></option>
+                        <option value="Youth Small">Youth Small</option>
+                        <option value="Youth Medium">Youth Medium</option>
+                        <option value="Youth Large">Youth Large</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="Extra-Large">Extra-Large</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <a>Permission to Play</a>
+                    <a>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+                        Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+                        accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+                        employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+                        on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+                        sponsored activities, which transportation.</a>
+                    <a>By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+                        cancellation policy and agree to its terms.</a>
+                </fieldset>
+                <fieldset>
+                    <label for="signature">Parent/Guardian Signature:</label>
+                    <input type="text" name="signature">
+                    <label for="authorizationdate">Date:</label>
+                    <input type="date" name="authorizationdate">
+
+                </fieldset>
+
+                <button name="submit">Submit Registration Form</button>
             </form>
         </section>
 
