@@ -256,3 +256,11 @@ table td {
 .positionquestion fieldset {
     margin-bottom: 10px;
 }
+
+.mapoflocations {
+    margin-top: 30px;
+}
+
+#themap {
+    width: 500px;
+}
