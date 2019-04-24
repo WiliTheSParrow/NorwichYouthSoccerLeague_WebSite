@@ -68,10 +68,10 @@ aside {
 }
 
 .logo {
-    width: 11vw;
-    min-width: 70px;
-    left: 2%;
-    top: 22vw;
+    width: 15vw;
+    min-width: 10px;
+    left: 1%;
+    top: 20vw;
     position: absolute;
     box-sizing: border-box;
 }
