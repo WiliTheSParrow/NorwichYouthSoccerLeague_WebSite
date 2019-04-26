@@ -11,7 +11,7 @@ body {
 .layout:before,
 .layout:after {
 
-    display: table;
+    display: block;
 }
 
 .layout:after {
@@ -45,7 +45,7 @@ aside {
 .headertitle {
     padding-left: 15px;
     font-size: 37px;
-    color: #a2fc4a;
+    color: #bbd18c;
     position: relative;
 }
 
@@ -55,7 +55,7 @@ aside {
 
 .informationbar {
     background: black;
-    color: #a2fc4a;
+    color: #facc3b;
     font-size: 22px;
     text-align: center;
     padding-top: 10px;
@@ -80,23 +80,34 @@ aside {
     float: left;
     margin-top: 5%;
     position: absolute;
+
 }
 
 .menusection a {
     display: block;
     height: 50px;
+
     margin-left: 15px;
     text-decoration: none;
     color: #bbd18c;
 }
 
+.menusection a:hover {
+    color: darkgreen;
+}
+
 .content {
-    float: right;
+    margin-left: 14vw;
     margin-bottom: 10%;
+    margin-top: 5%;
 }
 
 .content p {
     margin-left: 20px;
+}
+
+.content h2 {
+    margin-top: 0px;
 }
 
 #contactinfo {
@@ -123,11 +134,12 @@ aside {
 }
 
 #onapage {
-    color: #a2fc4a;
+    color: #facc3b;
     text-decoration: underline;
 }
 
 h3 {
+    margin-top: 0px;
     font-size: 22px;
 }
 
