@@ -4,11 +4,30 @@ body {
     color: #bbd18c;
     text-shadow: 1px 4px 8px #000000;
 }
-.container{
-    border: 1px solid red;
+
+
+.hide {
+    display: none;
 }
 
-/*--- Layout with Contained Floats ---*/
+
+.container {
+    border: 3px solid red;
+}
+
+
+.row {
+    border: 2px solid blue;
+}
+
+
+.col {
+    border: 1px solid yellow;
+}
+
+
+
+/*--- Layout with Contained Floats
 
 .layout:before,
 .layout:after {
@@ -37,7 +56,7 @@ aside {
     width: 14%;
 }
 
-/*---  ---*/
+  */
 
 
 .topofthepage {
@@ -78,31 +97,8 @@ aside {
     box-sizing: border-box;
 }
 
-.menusection {
-    float: left;
-    margin-top: 5%;
-    position: absolute;
 
-}
 
-.menusection a {
-    display: block;
-    height: 50px;
-
-    margin-left: 15px;
-    text-decoration: none;
-    color: #bbd18c;
-}
-
-.menusection a:hover {
-    color: darkgreen;
-}
-
-.content {
-    margin-left: 14vw;
-    margin-bottom: 10%;
-    margin-top: 5%;
-}
 
 .content p {
     margin-left: 20px;
@@ -120,6 +116,7 @@ aside {
     padding-left: 30px;
 }
 
+/*
 .designedby {
     font-size: 10px;
     text-align: center;
@@ -129,8 +126,9 @@ aside {
     width: 100%;
     background-color: #000000;
 }
+*/
 
-.designedby a {
+#designedby a {
     text-decoration: none;
     color: #bbd18c;
 }
