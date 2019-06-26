@@ -4,7 +4,9 @@ body {
     color: #bbd18c;
     text-shadow: 1px 4px 8px #000000;
 }
-
+.container{
+    border: 1px solid red;
+}
 
 /*--- Layout with Contained Floats ---*/
 

@@ -13,540 +13,543 @@
 </head>
 
 <body>
+    <div class="container" id="app">
+        <header class="topofthepage">
+            <div class="headertitle">Norwich Youth Soccer League</div>
+            <div class="headerimage"><img alt="Header image" src="img/design03.jpg">
+                <!--<div class="logo"><img alt="NYSL Logo image" src="img/nysl_logo1.png"></div>-->
+            </div>
+            <div class="informationbar">Norwich Youth Soccer League Home</div>
+        </header>
 
-    <header class="topofthepage">
-        <div class="headertitle">Norwich Youth Soccer League</div>
-        <div class="headerimage"><img alt="Header image" src="img/design03.jpg">
-            <div class="logo"><img alt="NYSL Logo image" src="img/nysl_logo1.png"></div>
+        <!--Menu Section-->
+        <div class="layout">
+            <aside class=menusection>
+                <a id="onapage">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Rules & policies</a>
+                <a href="#">Game Info</a>
+                <a href="#">Registration</a>
+            </aside>
         </div>
-        <div class="informationbar">Norwich Youth Soccer League Home</div>
-    </header>
 
-    <!--Menu Section-->
-    <div class="layout">
-        <aside class=menusection>
-            <a id="onapage">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Rules & policies</a>
-            <a href="#">Game Info</a>
-            <a href="#">Registration</a>
-        </aside>
-    </div>
-
-    <!--Content: Home/index-->
-    <div>
-        <section class=content>
-            <h3>April 20</h3>
-            <p>Norwich Youth Soccer League Fundraiser</p>
-            <h3>April 28</h3>
-            <p>Season Kick-off: Meet the Teams</p>
-            <h3>May 5</h3>
-            <p>First Game of the Season (Check Game Schedule for details)</p>
-        </section>
-    </div>
+        <!--Content: Home/index-->
+        <div v-if="path==1">
+            <section class=content>
+                <h3>April 20</h3>
+                <p>Norwich Youth Soccer League Fundraiser</p>
+                <h3>April 28</h3>
+                <p>Season Kick-off: Meet the Teams</p>
+                <h3>May 5</h3>
+                <p>First Game of the Season (Check Game Schedule for details)</p>
+            </section>
+        </div>
 
 
-    <!--Content: About--->
-    <div>
-        <section class=content>
+        <!--Content: About--->
+        <div v-if="path==2" v-on:click="pathChange(2)">
+            <section class=content>
 
-            <h2>Mission</h2>
+                <h2>Mission</h2>
 
-            <p>To support young athletes living in Norwich and neigborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, specifically those skills around team cooperation and good sportsmanship.</p>
-
-
-            <h2>Vision</h2>
-
-            <p>The Norwich Youth Soccer League aspires to develop strong, well-rounded, and mindful athletes through the building of character, self-discipline, and leadership.</p>
+                <p>To support young athletes living in Norwich and neigborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, specifically those skills around team cooperation and good sportsmanship.</p>
 
 
-            <h2>General Information</h2>
+                <h2>Vision</h2>
 
-            <p>The Norwich Youth Soccer League was established in 1995 to provide athletes residing in Norwich an environment in which to learn and play soccer. To be a member of Norwich Youth Soccer League, you must be between the ages of 4-12 and reside in a Norwich neighborhood. Norwich Youth Soccer League is ran by a small full-time staff, and relies on the generous volunteer time of parents and previous league members.</p>
-
-        </section>
-    </div>
+                <p>The Norwich Youth Soccer League aspires to develop strong, well-rounded, and mindful athletes through the building of character, self-discipline, and leadership.</p>
 
 
-    <!--Content: Contact-->
-    <div>
-        <section class=content id="contactinfo">
+                <h2>General Information</h2>
 
-            <p>Please e-mail us at info@witchysoccer.com</p>
-            <p>We will reply to your e-mail as soon as we can.</p>
+                <p>The Norwich Youth Soccer League was established in 1995 to provide athletes residing in Norwich an environment in which to learn and play soccer. To be a member of Norwich Youth Soccer League, you must be between the ages of 4-12 and reside in a Norwich neighborhood. Norwich Youth Soccer League is ran by a small full-time staff, and relies on the generous volunteer time of parents and previous league members.</p>
 
-        </section>
-    </div>
+            </section>
+        </div>
 
-    <!--Content: Gameinfo-->
-    <div>
-        <section class=content>
-            <h3>Spring and Summer Schedule</h3>
-            <a id="gameonsat">* All games take place on Saturday.</a>
-            <div class="gameinfotable">
-                <table>
-                    <tr>
-                        <th scope="col">MAY</th>
-                        <th scope="col">Teams</th>
-                        <th scope="col">Location</th>
-                        <th scope="col">Times</th>
-                    </tr>
-                    <tr>
-                        <td class="firstcolumn">5/05</td>
-                        <td>U1 and U4</td>
-                        <td>Norwich Primary Academy</td>
-                        <td>9:30 a.m.</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>U3 and U2</td>
-                        <td>Norwich Primary Academy</td>
-                        <td>1:00 p.m.</td>
-                    </tr>
-                    <tr>
-                        <td class="firstcolumn">5/12</td>
-                        <td>U5 and U6</td>
-                        <td>Eaton Primary School</td>
-                        <td>9:30 a.m.</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>U6 and U1</td>
-                        <td>Lakenham Primary School and Nursery</td>
-                        <td>1:00 p.m.</td>
-                    </tr>
-                    <tr>
-                        <td class="firstcolumn">5/19</td>
-                        <td>U2 and U4</td>
-                        <td>Bluebell Primary School</td>
-                        <td>9:30 a.m.</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>U3 and U5</td>
-                        <td>Trowse Primary School</td>
-                        <td>1:00 p.m.</td>
-                    </tr>
-                    <tr>
-                        <td class="firstcolumn">5/26</td>
-                        <td>U1 and U3</td>
-                        <td>Free School Norwich</td>
-                        <td>9:30 a.m.</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>U2 and U6</td>
-                        <td>Eaton Primary School</td>
-                        <td>1:00 p.m.</td>
-                    </tr>
 
-                </table>
-                <table>
-                    <tr>
-                        <th scope="col">JUNE</th>
-                        <th scope="col">Teams</th>
-                        <th scope="col">Location</th>
-                        <th scope="col">Times</th>
-                    </tr>
-                    <tr>
-                        <td class="firstcolumn">6/02</td>
-                        <td>U2 and U5</td>
-                        <td>Norwich Primary Academy</td>
-                        <td>9:30 a.m.</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>U1 and U6</td>
-                        <td>Eaton Primary School</td>
-                        <td>1:00 p.m.</td>
-                    </tr>
-                    <tr>
-                        <td class="firstcolumn">6/09</td>
-                        <td>U3 and U4</td>
-                        <td>Lakenham Primary School and Nursery</td>
-                        <td>9:30 a.m.</td>
-                    </tr>
-                    <tr>
-                        <td class="firstcolumn"></td>
-                        <td>U5 and U1</td>
-                        <td>Trowse Primary School</td>
-                        <td>1:00 p.m.</td>
-                    </tr>
-                    <tr>
-                        <td class="firstcolumn">6/16</td>
-                        <td>U6 and U3</td>
-                        <td>Bluebell Primary School</td>
-                        <td>9:30 a.m.</td>
-                    </tr>
-                    <tr>
-                        <td class="firstcolumn"></td>
-                        <td>U2 and U4</td>
-                        <td>Free School Norwich</td>
-                        <td>1:00 p.m.</td>
-                    </tr>
-                    <tr>
-                        <td class="firstcolumn">6/23</td>
-                        <td>U3 and U1</td>
-                        <td>Trowse Primary School</td>
-                        <td>9:30 a.m.</td>
-                    </tr>
-                    <tr>
-                        <td class="firstcolumn"></td>
-                        <td>U5 and U6</td>
-                        <td>Free School Norwich</td>
-                        <td>1:00 p.m.</td>
-                    </tr>
-                </table>
-                <table class="locationtable">
-                    <caption>Game Locations:</caption>
-                    <tr>
-                        <td class="locationfirstcolumn">Norwich Primary Academy</td>
-                        <td>Clarkson Rd, Norwich NR5 8ED, United Kingdom</td>
-                    </tr>
-                    <tr>
-                        <td class="locationfirstcolumn">Eaton Primary School</td>
-                        <td>Duverlin Cl, Norwich NR4 6HS, United Kingdom</td>
-                    </tr>
-                    <tr>
-                        <td class="locationfirstcolumn">Lakenham Primary School and Nursery</td>
-                        <td>City Rd, Norwich NR1 2HL, United Kingdom</td>
-                    </tr>
-                    <tr>
-                        <td class="locationfirstcolumn">Bluebell Primary School</td>
-                        <td>Lovelace Rd, Norwich NR4 7DS, United Kingdom</td>
-                    </tr>
-                    <tr>
-                        <td class="locationfirstcolumn">Trowse Primary School</td>
-                        <td>3 Dell Loke, Trowse Newton, Norwich NR14 8TH, United Kingdom</td>
-                    </tr>
-                    <tr>
-                        <td class="locationfirstcolumn">Free School Norwich</td>
-                        <td>Kings House, Surrey St, Norwich NR1 3NX, United Kingdom</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="mapoflocations">
-                <iframe src="https://www.google.com/maps/d/embed?mid=100yE5eJ1WQ6-rRkl134Fr1B4DeIXMLIb" width="640" height="480"></iframe>
-            </div>
+        <!--Content: Contact-->
+        <div v-if="path==3">
+            <section class=content id="contactinfo">
 
-            <div id="othergameinfo">
-                <p><a class="bold">Facility Type:</a> Outdoor</p>
-                <p><a class="bold">Additional Information:</a> If deemed necessary by Norwich Youth Soccer League, games may be shortened or cancelled due to extreme weather conditions.</p>
-                <p><a class="bold">Please direct all questions to:</a> </p>
-                <div id="gameinfocontact">
-                    <p><a class="bold">Phone: </a>+44 0123-4567</p>
-                    <p id="gameinfoemail"><a class="bold">Email: </a>info@witchysoccer.com</p>
+                <p>Please e-mail us at info@witchysoccer.com</p>
+                <p>We will reply to your e-mail as soon as we can.</p>
+
+            </section>
+        </div>
+
+        <!--Content: Gameinfo-->
+        <div v-if="path==4">
+            <section class=content>
+                <h3>Spring and Summer Schedule</h3>
+                <a id="gameonsat">* All games take place on Saturday.</a>
+                <div class="gameinfotable">
+                    <table>
+                        <tr>
+                            <th scope="col">MAY</th>
+                            <th scope="col">Teams</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Times</th>
+                        </tr>
+                        <tr>
+                            <td class="firstcolumn">5/05</td>
+                            <td>U1 and U4</td>
+                            <td>Norwich Primary Academy</td>
+                            <td>9:30 a.m.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>U3 and U2</td>
+                            <td>Norwich Primary Academy</td>
+                            <td>1:00 p.m.</td>
+                        </tr>
+                        <tr>
+                            <td class="firstcolumn">5/12</td>
+                            <td>U5 and U6</td>
+                            <td>Eaton Primary School</td>
+                            <td>9:30 a.m.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>U6 and U1</td>
+                            <td>Lakenham Primary School and Nursery</td>
+                            <td>1:00 p.m.</td>
+                        </tr>
+                        <tr>
+                            <td class="firstcolumn">5/19</td>
+                            <td>U2 and U4</td>
+                            <td>Bluebell Primary School</td>
+                            <td>9:30 a.m.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>U3 and U5</td>
+                            <td>Trowse Primary School</td>
+                            <td>1:00 p.m.</td>
+                        </tr>
+                        <tr>
+                            <td class="firstcolumn">5/26</td>
+                            <td>U1 and U3</td>
+                            <td>Free School Norwich</td>
+                            <td>9:30 a.m.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>U2 and U6</td>
+                            <td>Eaton Primary School</td>
+                            <td>1:00 p.m.</td>
+                        </tr>
+
+                    </table>
+                    <table>
+                        <tr>
+                            <th scope="col">JUNE</th>
+                            <th scope="col">Teams</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Times</th>
+                        </tr>
+                        <tr>
+                            <td class="firstcolumn">6/02</td>
+                            <td>U2 and U5</td>
+                            <td>Norwich Primary Academy</td>
+                            <td>9:30 a.m.</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>U1 and U6</td>
+                            <td>Eaton Primary School</td>
+                            <td>1:00 p.m.</td>
+                        </tr>
+                        <tr>
+                            <td class="firstcolumn">6/09</td>
+                            <td>U3 and U4</td>
+                            <td>Lakenham Primary School and Nursery</td>
+                            <td>9:30 a.m.</td>
+                        </tr>
+                        <tr>
+                            <td class="firstcolumn"></td>
+                            <td>U5 and U1</td>
+                            <td>Trowse Primary School</td>
+                            <td>1:00 p.m.</td>
+                        </tr>
+                        <tr>
+                            <td class="firstcolumn">6/16</td>
+                            <td>U6 and U3</td>
+                            <td>Bluebell Primary School</td>
+                            <td>9:30 a.m.</td>
+                        </tr>
+                        <tr>
+                            <td class="firstcolumn"></td>
+                            <td>U2 and U4</td>
+                            <td>Free School Norwich</td>
+                            <td>1:00 p.m.</td>
+                        </tr>
+                        <tr>
+                            <td class="firstcolumn">6/23</td>
+                            <td>U3 and U1</td>
+                            <td>Trowse Primary School</td>
+                            <td>9:30 a.m.</td>
+                        </tr>
+                        <tr>
+                            <td class="firstcolumn"></td>
+                            <td>U5 and U6</td>
+                            <td>Free School Norwich</td>
+                            <td>1:00 p.m.</td>
+                        </tr>
+                    </table>
+                    <table class="locationtable">
+                        <caption>Game Locations:</caption>
+                        <tr>
+                            <td class="locationfirstcolumn">Norwich Primary Academy</td>
+                            <td>Clarkson Rd, Norwich NR5 8ED, United Kingdom</td>
+                        </tr>
+                        <tr>
+                            <td class="locationfirstcolumn">Eaton Primary School</td>
+                            <td>Duverlin Cl, Norwich NR4 6HS, United Kingdom</td>
+                        </tr>
+                        <tr>
+                            <td class="locationfirstcolumn">Lakenham Primary School and Nursery</td>
+                            <td>City Rd, Norwich NR1 2HL, United Kingdom</td>
+                        </tr>
+                        <tr>
+                            <td class="locationfirstcolumn">Bluebell Primary School</td>
+                            <td>Lovelace Rd, Norwich NR4 7DS, United Kingdom</td>
+                        </tr>
+                        <tr>
+                            <td class="locationfirstcolumn">Trowse Primary School</td>
+                            <td>3 Dell Loke, Trowse Newton, Norwich NR14 8TH, United Kingdom</td>
+                        </tr>
+                        <tr>
+                            <td class="locationfirstcolumn">Free School Norwich</td>
+                            <td>Kings House, Surrey St, Norwich NR1 3NX, United Kingdom</td>
+                        </tr>
+                    </table>
                 </div>
-            </div>
-        </section>
-    </div>
+                <div class="mapoflocations">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=100yE5eJ1WQ6-rRkl134Fr1B4DeIXMLIb" width="640" height="480"></iframe>
+                </div>
 
-    <!--Content: Registration-->
-    <div>
-        <section class="content">
-            <form action="show_data.html" method="get">
-                <div id="registratinform">
-                    <fieldset class="playersdata">
-                        <label for="firstname">Player's First Name:</label>
-                        <input type="text" name="firstname" id="firstname">
-                        <label for="lastname">Last Name:</label>
-                        <input type="text" name="lastname" id="lastname">
-                    </fieldset>
-                    <fieldset>
-                        <label for="streetasress">Street Address:</label>
-                        <input type="text" name="streetasress" id="streetasress">
-                    </fieldset>
-                    <fieldset>
-                        <label for="city">City:</label>
-                        <input type="text" name="city" id="city">
-                        <label for="zipcode">Zip Code:</label>
-                        <input type="text" name="zipcode" id="zipcode">
-                    </fieldset>
-                    <fieldset>
-                        <label for="birthdate">Birth Date:</label>
-                        <input type="date" name="birthdate" id="birthdate">
-                        <a>Gender:</a>
-                        <input type="radio" name="male" value="male" id="male">
-                        <label for="male">Male</label>
-                        <input type="radio" name="female" value="female" id="female">
-                        <label for="female">Female</label>
-                        <input type="radio" name="gender" value="rathernotsay" id="rathernotsay">
-                        <label for="rathernotsay">Rather not say</label>
-                    </fieldset>
-                    <fieldset>
-                        <a>Grade:</a>
-                        <input type="radio" name="preschool" id="preschool">
-                        <label for="preschool">Pre-School</label>
-                        <input type="radio" name="1st" id="1st">
-                        <label for="1st">1st</label>
-                        <input type="radio" name="2nd" id="2nd">
-                        <label for="2nd">2nd</label>
-                        <input type="radio" name="3rd" id="3rd">
-                        <label for="3rd">3rd</label>
-                        <input type="radio" name="4th" id="4th">
-                        <label for="4th">4th</label>
-                        <input type="radio" name="5th" id="5th">
-                        <label for="5th">5th</label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="parentguardian">Parent/Guardian:</label>
-                        <input type="text" name="parentguardian" id="parentguardian">
-                    </fieldset>
-                    <fieldset>
-                        <label for="contactphone">Contact Phone:</label>
-                        <input type="tel" name="contactphone" id="contactphone">
-                        <label for="contactemail">Contact Email:</label>
-                        <input type="email" name="contactemail" id="contactemail">
-                    </fieldset>
+                <div id="othergameinfo">
+                    <p><a class="bold">Facility Type:</a> Outdoor</p>
+                    <p><a class="bold">Additional Information:</a> If deemed necessary by Norwich Youth Soccer League, games may be shortened or cancelled due to extreme weather conditions.</p>
+                    <p><a class="bold">Please direct all questions to:</a> </p>
+                    <div id="gameinfocontact">
+                        <p><a class="bold">Phone: </a>+44 0123-4567</p>
+                        <p id="gameinfoemail"><a class="bold">Email: </a>info@witchysoccer.com</p>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-                    <div class="closequestion">
-                        <a class="registrationquestion">Which elementary schools do you live near?</a>
+        <!--Content: Registration-->
+        <div v-if="path==5">
+            <section class="content">
+                <form action="show_data.html" method="get">
+                    <div id="registratinform">
+                        <fieldset class="playersdata">
+                            <label for="firstname">Player's First Name:</label>
+                            <input type="text" name="firstname" id="firstname">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" name="lastname" id="lastname">
+                        </fieldset>
+                        <fieldset>
+                            <label for="streetasress">Street Address:</label>
+                            <input type="text" name="streetasress" id="streetasress">
+                        </fieldset>
+                        <fieldset>
+                            <label for="city">City:</label>
+                            <input type="text" name="city" id="city">
+                            <label for="zipcode">Zip Code:</label>
+                            <input type="text" name="zipcode" id="zipcode">
+                        </fieldset>
+                        <fieldset>
+                            <label for="birthdate">Birth Date:</label>
+                            <input type="date" name="birthdate" id="birthdate">
+                            <a>Gender:</a>
+                            <input type="radio" name="male" value="male" id="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="female" value="female" id="female">
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" value="rathernotsay" id="rathernotsay">
+                            <label for="rathernotsay">Rather not say</label>
+                        </fieldset>
+                        <fieldset>
+                            <a>Grade:</a>
+                            <input type="radio" name="preschool" id="preschool">
+                            <label for="preschool">Pre-School</label>
+                            <input type="radio" name="1st" id="1st">
+                            <label for="1st">1st</label>
+                            <input type="radio" name="2nd" id="2nd">
+                            <label for="2nd">2nd</label>
+                            <input type="radio" name="3rd" id="3rd">
+                            <label for="3rd">3rd</label>
+                            <input type="radio" name="4th" id="4th">
+                            <label for="4th">4th</label>
+                            <input type="radio" name="5th" id="5th">
+                            <label for="5th">5th</label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="parentguardian">Parent/Guardian:</label>
+                            <input type="text" name="parentguardian" id="parentguardian">
+                        </fieldset>
+                        <fieldset>
+                            <label for="contactphone">Contact Phone:</label>
+                            <input type="tel" name="contactphone" id="contactphone">
+                            <label for="contactemail">Contact Email:</label>
+                            <input type="email" name="contactemail" id="contactemail">
+                        </fieldset>
+
+                        <div class="closequestion">
+                            <a class="registrationquestion">Which elementary schools do you live near?</a>
+                            <fieldset>
+
+                                <label for="firstclosestschool">First Closest School:</label>
+                                <select name="firstclosestschool" id="firstclosestschool">
+
+                                    <option value="AJ Katzenmaier">Norwich Primary Academy</option>
+                                    <option value="Greenbay">Eaton Primary School</option>
+                                    <option value="Howard A Yeager">Lakenham Primary School and Nursery</option>
+                                    <option value="Marjorie P Hart">Bluebell Primary School</option>
+                                    <option value="North Elementary">Trowse Primary School</option>
+                                    <option value="South Elementary">Free School Norwich</option>
+                                </select>
+
+                                <label for="secondclosestschool">Second Closest School:</label>
+                                <select name="secondclosestschool" id="secondclosestschool">
+
+                                    <option value="AJ Katzenmaier">Norwich Primary Academy</option>
+                                    <option value="Greenbay">Eaton Primary School</option>
+                                    <option value="Howard A Yeager">Lakenham Primary School and Nursery</option>
+                                    <option value="Marjorie P Hart">Bluebell Primary School</option>
+                                    <option value="North Elementary">Trowse Primary School</option>
+                                    <option value="South Elementary">Free School Norwich</option>
+                                </select>
+
+                            </fieldset>
+                        </div>
+
+                        <div class="positionquestion">
+                            <a class="registrationquestion">What position(s) do you normally play? (check all that apply)</a>
+                            <fieldset>
+                                <input type="checkbox" name="forward" value="Forward" id="forward">
+                                <label for="forward">Forward</label>
+
+                                <input type="checkbox" name="defense" value="defense" id="defense">
+                                <label for="defense">Defense</label>
+
+                                <input type="checkbox" name="midfield" value="midfield" id="midfield">
+                                <label for="midfield">Midfield</label>
+
+                                <input type="checkbox" name="goalkeeper" value="goalkeeper" id="goalkeeper">
+                                <label for="goalkeeper">Goalkeeper</label>
+                            </fieldset>
+
+
+
+                            <a class="registrationquestion">What position(s) do you want to play? (check all that apply)</a>
+                            <fieldset>
+                                <input type="checkbox" name="forward2" value="forward2" id="forward2">
+                                <label for="forward2">Forward</label>
+
+                                <input type="checkbox" name="defense2" value="defense2" id="defense2">
+                                <label for="defense2">Defense</label>
+
+                                <input type="checkbox" name="midfield2" value="midfield2" id="midfield2">
+                                <label for="midfield2">Midfield</label>
+
+                                <input type="checkbox" name="goalkeeper2" value="goalkeeper2" id="goalkeeper2">
+                                <label for="goalkeeper2">Goalkeeper</label>
+                            </fieldset>
+                        </div>
+
+                        <fieldset>
+                            <input type="checkbox" name="uniform" value="yes" id="uniform">
+                            <label for="uniform">Already Have a Uniform</label>
+                        </fieldset>
+
                         <fieldset>
 
-                            <label for="firstclosestschool">First Closest School:</label>
-                            <select name="firstclosestschool" id="firstclosestschool">
+                            <label for="jerseysize">Jersey Size:</label>
+                            <select name="jerseysize" id="jerseysize">
 
-                                <option value="AJ Katzenmaier">Norwich Primary Academy</option>
-                                <option value="Greenbay">Eaton Primary School</option>
-                                <option value="Howard A Yeager">Lakenham Primary School and Nursery</option>
-                                <option value="Marjorie P Hart">Bluebell Primary School</option>
-                                <option value="North Elementary">Trowse Primary School</option>
-                                <option value="South Elementary">Free School Norwich</option>
+                                <option value="Youth Small">Youth Small</option>
+                                <option value="Youth Medium">Youth Medium</option>
+                                <option value="Youth Large">Youth Large</option>
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                                <option value="Extra-Large">Extra-Large</option>
                             </select>
 
-                            <label for="secondclosestschool">Second Closest School:</label>
-                            <select name="secondclosestschool" id="secondclosestschool">
+                            <label for="shortsize">Shorts Size:</label>
+                            <select name="shortsize" id="shortsize">
 
-                                <option value="AJ Katzenmaier">Norwich Primary Academy</option>
-                                <option value="Greenbay">Eaton Primary School</option>
-                                <option value="Howard A Yeager">Lakenham Primary School and Nursery</option>
-                                <option value="Marjorie P Hart">Bluebell Primary School</option>
-                                <option value="North Elementary">Trowse Primary School</option>
-                                <option value="South Elementary">Free School Norwich</option>
+                                <option value="Youth Small">Youth Small</option>
+                                <option value="Youth Medium">Youth Medium</option>
+                                <option value="Youth Large">Youth Large</option>
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                                <option value="Extra-Large">Extra-Large</option>
                             </select>
-
                         </fieldset>
-                    </div>
 
-                    <div class="positionquestion">
-                        <a class="registrationquestion">What position(s) do you normally play? (check all that apply)</a>
+                        <fieldset class="permission">
+                            <a id="permissiontitle">Permission to Play</a>
+                            <a>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+                                Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+                                accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+                                employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+                                on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+                                sponsored activities, which transportation.</a>
+                            <a id="signingtheregistration">By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+                                cancellation policy and agree to its terms.</a>
+                        </fieldset>
                         <fieldset>
-                            <input type="checkbox" name="forward" value="Forward" id="forward">
-                            <label for="forward">Forward</label>
+                            <label for="signature">Parent/Guardian Signature:</label>
+                            <input type="text" name="signature" id="signature">
+                            <label for="authorizationdate">Date:</label>
+                            <input type="date" name="authorizationdate" id="authorizationdate">
 
-                            <input type="checkbox" name="defense" value="defense" id="defense">
-                            <label for="defense">Defense</label>
-
-                            <input type="checkbox" name="midfield" value="midfield" id="midfield">
-                            <label for="midfield">Midfield</label>
-
-                            <input type="checkbox" name="goalkeeper" value="goalkeeper" id="goalkeeper">
-                            <label for="goalkeeper">Goalkeeper</label>
                         </fieldset>
 
-
-
-                        <a class="registrationquestion">What position(s) do you want to play? (check all that apply)</a>
-                        <fieldset>
-                            <input type="checkbox" name="forward2" value="forward2" id="forward2">
-                            <label for="forward2">Forward</label>
-
-                            <input type="checkbox" name="defense2" value="defense2" id="defense2">
-                            <label for="defense2">Defense</label>
-
-                            <input type="checkbox" name="midfield2" value="midfield2" id="midfield2">
-                            <label for="midfield2">Midfield</label>
-
-                            <input type="checkbox" name="goalkeeper2" value="goalkeeper2" id="goalkeeper2">
-                            <label for="goalkeeper2">Goalkeeper</label>
-                        </fieldset>
+                        <button name="submit">Submit Registration Form</button>
                     </div>
+                </form>
+            </section>
+        </div>
 
-                    <fieldset>
-                        <input type="checkbox" name="uniform" value="yes" id="uniform">
-                        <label for="uniform">Already Have a Uniform</label>
-                    </fieldset>
+        <!--Content: Rules & policies-->
+        <div v-if="path==6">
+            <section class=content>
+                <h3>Norwich Youth Soccer League Rules of play & policies</h3>
+                <p id="ruleinfo">FIFA rules shall govern Norwich Youth Soccer League play except as modified herein.</p>
 
-                    <fieldset>
+                <p class="dropdown">SPORTSMANSHIP</p>
+                <ul>
+                    <li>The common interest that members of the Association share is to inspire youth to practice the ideals of sportsmanship and fair play. Any player, coach, team, parent, spectator, administrator or referee whose behavior detracts from this purpose is subject to disciplinary action regardless of technical soccer background, expertise, accomplishments or standing.</li>
+                </ul>
+                <p class="dropdown">FIFA FIELD REGULATIONS</p>
+                <ol>
+                    <li><a class="bold">DIMENSIONS.</a> FIFA Law 1 provides for flexible external field dimensions within a given maximum and minimum width and length. These dimensions should be adhered to for all fields used by teams under 12 and older.</li>
+                    <li><a class="bold">COMPETITION FIELDS.</a> Fields used within the competition program must be a minimum of 100 x 60 yards. Leagues, districts or associations participating in the state competition program that are unable to provide a field that meets these minimum requirements must advise the State Competition Board which will assign its Fields Committee to inspect the field and recommend to the Board whether or not a waiver of the minimum dimensions should be granted. Teams from leagues, districts or associations that are unable to provide an acceptable field may be required to play all their games away.</li>
+                    <li><a class="bold">FIELDS USED BY YOUNG AGE GROUPS.</a>
+                        <ol type="a">
+                            <li>U-6 play on a field approximately 20 X 40 yards with no penalty areas. Fields for older age groups should be progressively larger.</li>
+                            <li>U-8 plays on a field 40-50 yards in length and 20-30 yards width.</li>
+                            <li>U-10 play on a field 70-80 yards in length and 40-50 yards in width.</li>
+                            <li>In addition, fields used by young age groups may have their internal dimensions and size of goal similarly modified.</li>
+                        </ol>
+                    </li>
+                    <li><a class="bold">TEAM BENCH AREAS</a>
+                        <ol type="a">
+                            <li>Recreation & District Programs
+                                <ul>
+                                    <li>The decision for team/spectator placement on the field will be made by the governing body of that team. A team’s bench area shall consist of that area at least one (1) yard away from the touchline and extending to twenty yards (20) both ways from the halfway line. In the event that field 2 conditions require team benches to be on the same side of the field, a team’s bench area shall consist of that area two (2) yards away from the touchline and extending twenty yards one (1) way from the halfway line.</li>
+                                    <li>The home team has first choice as to where it wishes to locate its bench area. Coaches and substitutes are required to remain within their bench area during the game. Parents and spectators should occupy the same side of the field as the team they are supporting.</li>
+                                </ul>
+                            </li>
+                            <li>State Competition League Only
+                                <ul>
+                                    <li>Except where it is determined by the referee to be impractical, team bench areas shall be along the same touchline. Each team bench area shall be located two yards outside the touchline, beginning not closer than five yards from midfield and extending not further than twenty yards from midfield. The home team shall have the right to choose the location of its bench area. Coaches and substitutes must remain within their team's bench area during the game.</li>
+                                    <li>Parents and spectators must occupy the sideline opposite the team bench areas. Supporters of a team must assemble on the side of the midfield facing the team bench area of that team. There shall be a buffer zone extending ten yards on each side of the midfield that may not be occupied by parents or spectators. Match officials shall be empowered to enforce these provisions and may suspend or terminate games in the event that any team, coach, parent, or spectator declines to abide by requests from match officials to comply with these standards.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <p class="dropdown">EQUIPMENT</p>
+                <ul>
+                    <li>We will abide by and accept equipment standards as defined by FIFA, USSF and USYSA.</li>
+                </ul>
+                <p class="dropdown">NUMBER OF PLAYERS</p>
+                <ul>
+                    <li><a class="bold">TEAM SIZE.</a> Except as noted below, team rosters shall consist of not less than eleven nor more than eighteen players. A team must have at least seven (7) players present and able to play before referees are permitted to start a sanctioned game. No more than eleven (11) players per team may be on the field at any one time during the game.</li>
+                    <li><a class="bold">SIZE OF AGE GROUP TEAMS.</a> In order to give player’s maximum opportunity to develop in the game of soccer, U-6 through U-1O play modified rules and size of roster as stated in United States Youth Soccer Association (USYSA) rules. It is strongly recommended that U-6 and U-8 play 4 v 4. UYSA shall not sanction games involving teams under 10 or younger unless such games are conducted with not more than eight (8) players per side. (National rule 4036 section 2)</li>
+                    <li>Recreational/Developmental players at other ages or where numbers in the playing area are low are strongly encouraged to play small-sided games on reduced field size.</li>
+                </ul>
+                <p class="dropdown">SUBSTITUTIONS</p>
+                <ul>
+                    <li>Teams may make an unlimited number of substitutions at the times indicated below. A player who has been replaced may re-enter the game as a substitute at a later time.
+                        <ol>
+                            <li>Prior to a throw-in your favor.</li>
+                            <li>Prior to a goalkick by either team.</li>
+                            <li>After a goal by either team.</li>
+                            <li>After an injury, by either team, when the referee stops play.</li>
+                            <li>At half time.</li>
+                            <li>When a player has been “cautioned”, only the player receiving “caution” may be substituted.</li>
+                        </ol>
 
-                        <label for="jerseysize">Jersey Size:</label>
-                        <select name="jerseysize" id="jerseysize">
+                    </li>
+                </ul>
+                <p class="dropdown">CONFISCATED PLAYER PASSES</p>
+                <ul>
+                    <li>Passes of any individual(s) ejected from any match shall be retained after the match by the referee. The pass of any individual who has received a third caution (yellow card) during a playing year shall be confiscated by the referee at the conclusion of the match in which the third caution was received. That player will be suspended from playing in the next game in which the offending participant would otherwise be eligible to participate. This process will continue so that for every third yellow card received during a playing year, the player will be suspended from playing in the next game (after the receipt of a third yellow card) for which the offending participate would otherwise be eligible to participate. The referee shall deliver all confiscated passes to the UYSA State Office within forty-eight (48) hours of the conclusion of the match. </li>
+                </ul>
+                <p class="dropdown">ALL-PLAY</p>
+                <ul>
+                    <li>All-play means that every recreation player on every team shall play at least fifty percent of each game. Coaches in the competition program are encouraged to play their players 50% of each game.
+                        <ul>
+                            <li>A Coach shall be permitted to not play a player 50% of each game under special circumstances, e.g., unexcused absences from practice and/or games, ungentlemanly conduct at practice and/or games, and injuries.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="dropdown">PLAYERS’ EQUIPMENT</p>
+                <ul>
+                    <li>Where the uniform colors of both teams are so similar that the referee orders a change, the designated home team must change to colors distinct from those of the opponent.</li>
+                </ul>
+                <p class="dropdown">MIXED TEAMS</p>
+                <ul>
+                    <li><a class="bold">GIRLS PLAYING ON BOYS’ TEAMS.</a> Girls are eligible to play on boys’ teams with parent/guardian permission. </li>
+                    <li><a class="bold">TYPES OF TEAMS.</a> Teams with females only are Girls Teams. All others are Boys Teams.</li>
+                </ul>
+                <p class="dropdown">COACHING FROM THE SIDELINES</p>
+                <ul>
+                    <li>Coaching from the sidelines, i.e., giving direction to one’s own team on points of strategy and position, is permitted provided that:
+                        <ol>
+                            <li>No mechanical, electrical or other devices are used to amplify the voice.</li>
+                            <li>The tone of voice is informative and not a harangue. </li>
+                            <li>The coaching takes place within the team’s bench area. </li>
+                            <li>No coach, substitute, player or spectator is to make derogatory remarks or gestures to the referees, linesmen, players, substitutes or spectators. </li>
+                            <li>No coach, player, substitute or spectator is to use profanity or incite, in any manner, disruptive behavior of any kind. </li>
+                        </ol>
+                    </li>
+                </ul>
+                <p class="dropdown">GAME TERMINATION</p>
+                <ul>
+                    <li>Any game terminated after 15 minutes into the second half by the referee by reason of the elements, or by reason of grave disorder on the part of the coaches, players or spectators of a team that is losing at the point that the game is terminated, shall stand as a completed game. If a team is ahead and the game is called because of their actions they will lose the game 1-0.</li>
+                </ul>
+                <p class="dropdown">CONDITIONS OF REPLAY OF GAMES</p>
+                <ul>
+                    <li>Any game which is required to be replayed as a result of any protest or appeal, shall be subject to the following conditions:
+                        <ol>
+                            <li>The game shall be replayed on the same field, as was the suspended or protested game, unless otherwise agreed by the coaches.</li>
+                            <li>Impartial referees shall be assigned to the new game.</li>
+                            <li>The PROTEST AND APPEALS COMMITTEE shall have the power to impose such additional conditions on the replay of the game, as it deems appropriate under the circumstances.</li>
+                        </ol>
+                    </li>
+                </ul>
+                <p class="dropdown">REFEREE RESPONSIBLITIES</p>
+                <ul>
+                    <li>The referee shall verify the identity of the players and coaches with his/her player pass. He shall collect the passes of those players and coaches who are to participate in the game. The referee must allow no player into the game for whom he/she has no pass.</li>
+                    <li>Upon completion of the game, the referee shall send his/her report to the UYSA offices within four (4) days, holidays excluded. If a coach or a player is ejected, the referee report form is required within forty-eight (48) hours along with the player/coach pass.
+                    <li>A referee report form must be filed for every game played. </li>
+                    <li>Each team must determine whether or not referees are registered prior to the start of each game. Upon request, referees officiating at any game must willingly and without bias, show documentation regarding their certification level and registration standing with the USSF to coach, assistant coach, or team captain of teams participating in that game. Prior to the game a coach may decide to postpone the game if the referees do not produce the requested documentation. The game is to be replayed at a later date. </li>
+                    <li>Referees not complying with this section will be referred to the Disciplinary Committee. </li>
+                </ul>
 
-                            <option value="Youth Small">Youth Small</option>
-                            <option value="Youth Medium">Youth Medium</option>
-                            <option value="Youth Large">Youth Large</option>
-                            <option value="Small">Small</option>
-                            <option value="Medium">Medium</option>
-                            <option value="Large">Large</option>
-                            <option value="Extra-Large">Extra-Large</option>
-                        </select>
+            </section>
+        </div>
 
-                        <label for="shortsize">Shorts Size:</label>
-                        <select name="shortsize" id="shortsize">
-
-                            <option value="Youth Small">Youth Small</option>
-                            <option value="Youth Medium">Youth Medium</option>
-                            <option value="Youth Large">Youth Large</option>
-                            <option value="Small">Small</option>
-                            <option value="Medium">Medium</option>
-                            <option value="Large">Large</option>
-                            <option value="Extra-Large">Extra-Large</option>
-                        </select>
-                    </fieldset>
-
-                    <fieldset class="permission">
-                        <a id="permissiontitle">Permission to Play</a>
-                        <a>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
-                            Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
-                            accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
-                            employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
-                            on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
-                            sponsored activities, which transportation.</a>
-                        <a id="signingtheregistration">By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
-                            cancellation policy and agree to its terms.</a>
-                    </fieldset>
-                    <fieldset>
-                        <label for="signature">Parent/Guardian Signature:</label>
-                        <input type="text" name="signature" id="signature">
-                        <label for="authorizationdate">Date:</label>
-                        <input type="date" name="authorizationdate" id="authorizationdate">
-
-                    </fieldset>
-
-                    <button name="submit">Submit Registration Form</button>
-                </div>
-            </form>
-        </section>
+        <!---Footer-->
+        <div class="designedby">
+            <footer>
+                Norwich Youth Soccer League Website <span class="separator">|</span> Design by <a href="https://www.linkedin.com/in/wjulia91/" target="_blank">Julia Wilhelm</a>
+            </footer>
+        </div>
     </div>
-
-    <!--Content: Rules & policies-->
-    <div>
-        <section class=content>
-            <h3>Norwich Youth Soccer League Rules of play & policies</h3>
-            <p id="ruleinfo">FIFA rules shall govern Norwich Youth Soccer League play except as modified herein.</p>
-
-            <p class="dropdown">SPORTSMANSHIP</p>
-            <ul>
-                <li>The common interest that members of the Association share is to inspire youth to practice the ideals of sportsmanship and fair play. Any player, coach, team, parent, spectator, administrator or referee whose behavior detracts from this purpose is subject to disciplinary action regardless of technical soccer background, expertise, accomplishments or standing.</li>
-            </ul>
-            <p class="dropdown">FIFA FIELD REGULATIONS</p>
-            <ol>
-                <li><a class="bold">DIMENSIONS.</a> FIFA Law 1 provides for flexible external field dimensions within a given maximum and minimum width and length. These dimensions should be adhered to for all fields used by teams under 12 and older.</li>
-                <li><a class="bold">COMPETITION FIELDS.</a> Fields used within the competition program must be a minimum of 100 x 60 yards. Leagues, districts or associations participating in the state competition program that are unable to provide a field that meets these minimum requirements must advise the State Competition Board which will assign its Fields Committee to inspect the field and recommend to the Board whether or not a waiver of the minimum dimensions should be granted. Teams from leagues, districts or associations that are unable to provide an acceptable field may be required to play all their games away.</li>
-                <li><a class="bold">FIELDS USED BY YOUNG AGE GROUPS.</a>
-                    <ol type="a">
-                        <li>U-6 play on a field approximately 20 X 40 yards with no penalty areas. Fields for older age groups should be progressively larger.</li>
-                        <li>U-8 plays on a field 40-50 yards in length and 20-30 yards width.</li>
-                        <li>U-10 play on a field 70-80 yards in length and 40-50 yards in width.</li>
-                        <li>In addition, fields used by young age groups may have their internal dimensions and size of goal similarly modified.</li>
-                    </ol>
-                </li>
-                <li><a class="bold">TEAM BENCH AREAS</a>
-                    <ol type="a">
-                        <li>Recreation & District Programs
-                            <ul>
-                                <li>The decision for team/spectator placement on the field will be made by the governing body of that team. A team’s bench area shall consist of that area at least one (1) yard away from the touchline and extending to twenty yards (20) both ways from the halfway line. In the event that field 2 conditions require team benches to be on the same side of the field, a team’s bench area shall consist of that area two (2) yards away from the touchline and extending twenty yards one (1) way from the halfway line.</li>
-                                <li>The home team has first choice as to where it wishes to locate its bench area. Coaches and substitutes are required to remain within their bench area during the game. Parents and spectators should occupy the same side of the field as the team they are supporting.</li>
-                            </ul>
-                        </li>
-                        <li>State Competition League Only
-                            <ul>
-                                <li>Except where it is determined by the referee to be impractical, team bench areas shall be along the same touchline. Each team bench area shall be located two yards outside the touchline, beginning not closer than five yards from midfield and extending not further than twenty yards from midfield. The home team shall have the right to choose the location of its bench area. Coaches and substitutes must remain within their team's bench area during the game.</li>
-                                <li>Parents and spectators must occupy the sideline opposite the team bench areas. Supporters of a team must assemble on the side of the midfield facing the team bench area of that team. There shall be a buffer zone extending ten yards on each side of the midfield that may not be occupied by parents or spectators. Match officials shall be empowered to enforce these provisions and may suspend or terminate games in the event that any team, coach, parent, or spectator declines to abide by requests from match officials to comply with these standards.</li>
-                            </ul>
-                        </li>
-                    </ol>
-                </li>
-            </ol>
-            <p class="dropdown">EQUIPMENT</p>
-            <ul>
-                <li>We will abide by and accept equipment standards as defined by FIFA, USSF and USYSA.</li>
-            </ul>
-            <p class="dropdown">NUMBER OF PLAYERS</p>
-            <ul>
-                <li><a class="bold">TEAM SIZE.</a> Except as noted below, team rosters shall consist of not less than eleven nor more than eighteen players. A team must have at least seven (7) players present and able to play before referees are permitted to start a sanctioned game. No more than eleven (11) players per team may be on the field at any one time during the game.</li>
-                <li><a class="bold">SIZE OF AGE GROUP TEAMS.</a> In order to give player’s maximum opportunity to develop in the game of soccer, U-6 through U-1O play modified rules and size of roster as stated in United States Youth Soccer Association (USYSA) rules. It is strongly recommended that U-6 and U-8 play 4 v 4. UYSA shall not sanction games involving teams under 10 or younger unless such games are conducted with not more than eight (8) players per side. (National rule 4036 section 2)</li>
-                <li>Recreational/Developmental players at other ages or where numbers in the playing area are low are strongly encouraged to play small-sided games on reduced field size.</li>
-            </ul>
-            <p class="dropdown">SUBSTITUTIONS</p>
-            <ul>
-                <li>Teams may make an unlimited number of substitutions at the times indicated below. A player who has been replaced may re-enter the game as a substitute at a later time.
-                    <ol>
-                        <li>Prior to a throw-in your favor.</li>
-                        <li>Prior to a goalkick by either team.</li>
-                        <li>After a goal by either team.</li>
-                        <li>After an injury, by either team, when the referee stops play.</li>
-                        <li>At half time.</li>
-                        <li>When a player has been “cautioned”, only the player receiving “caution” may be substituted.</li>
-                    </ol>
-
-                </li>
-            </ul>
-            <p class="dropdown">CONFISCATED PLAYER PASSES</p>
-            <ul>
-                <li>Passes of any individual(s) ejected from any match shall be retained after the match by the referee. The pass of any individual who has received a third caution (yellow card) during a playing year shall be confiscated by the referee at the conclusion of the match in which the third caution was received. That player will be suspended from playing in the next game in which the offending participant would otherwise be eligible to participate. This process will continue so that for every third yellow card received during a playing year, the player will be suspended from playing in the next game (after the receipt of a third yellow card) for which the offending participate would otherwise be eligible to participate. The referee shall deliver all confiscated passes to the UYSA State Office within forty-eight (48) hours of the conclusion of the match. </li>
-            </ul>
-            <p class="dropdown">ALL-PLAY</p>
-            <ul>
-                <li>All-play means that every recreation player on every team shall play at least fifty percent of each game. Coaches in the competition program are encouraged to play their players 50% of each game.
-                    <ul>
-                        <li>A Coach shall be permitted to not play a player 50% of each game under special circumstances, e.g., unexcused absences from practice and/or games, ungentlemanly conduct at practice and/or games, and injuries.</li>
-                    </ul>
-                </li>
-            </ul>
-            <p class="dropdown">PLAYERS’ EQUIPMENT</p>
-            <ul>
-                <li>Where the uniform colors of both teams are so similar that the referee orders a change, the designated home team must change to colors distinct from those of the opponent.</li>
-            </ul>
-            <p class="dropdown">MIXED TEAMS</p>
-            <ul>
-                <li><a class="bold">GIRLS PLAYING ON BOYS’ TEAMS.</a> Girls are eligible to play on boys’ teams with parent/guardian permission. </li>
-                <li><a class="bold">TYPES OF TEAMS.</a> Teams with females only are Girls Teams. All others are Boys Teams.</li>
-            </ul>
-            <p class="dropdown">COACHING FROM THE SIDELINES</p>
-            <ul>
-                <li>Coaching from the sidelines, i.e., giving direction to one’s own team on points of strategy and position, is permitted provided that:
-                    <ol>
-                        <li>No mechanical, electrical or other devices are used to amplify the voice.</li>
-                        <li>The tone of voice is informative and not a harangue. </li>
-                        <li>The coaching takes place within the team’s bench area. </li>
-                        <li>No coach, substitute, player or spectator is to make derogatory remarks or gestures to the referees, linesmen, players, substitutes or spectators. </li>
-                        <li>No coach, player, substitute or spectator is to use profanity or incite, in any manner, disruptive behavior of any kind. </li>
-                    </ol>
-                </li>
-            </ul>
-            <p class="dropdown">GAME TERMINATION</p>
-            <ul>
-                <li>Any game terminated after 15 minutes into the second half by the referee by reason of the elements, or by reason of grave disorder on the part of the coaches, players or spectators of a team that is losing at the point that the game is terminated, shall stand as a completed game. If a team is ahead and the game is called because of their actions they will lose the game 1-0.</li>
-            </ul>
-            <p class="dropdown">CONDITIONS OF REPLAY OF GAMES</p>
-            <ul>
-                <li>Any game which is required to be replayed as a result of any protest or appeal, shall be subject to the following conditions:
-                    <ol>
-                        <li>The game shall be replayed on the same field, as was the suspended or protested game, unless otherwise agreed by the coaches.</li>
-                        <li>Impartial referees shall be assigned to the new game.</li>
-                        <li>The PROTEST AND APPEALS COMMITTEE shall have the power to impose such additional conditions on the replay of the game, as it deems appropriate under the circumstances.</li>
-                    </ol>
-                </li>
-            </ul>
-            <p class="dropdown">REFEREE RESPONSIBLITIES</p>
-            <ul>
-                <li>The referee shall verify the identity of the players and coaches with his/her player pass. He shall collect the passes of those players and coaches who are to participate in the game. The referee must allow no player into the game for whom he/she has no pass.</li>
-                <li>Upon completion of the game, the referee shall send his/her report to the UYSA offices within four (4) days, holidays excluded. If a coach or a player is ejected, the referee report form is required within forty-eight (48) hours along with the player/coach pass.
-                <li>A referee report form must be filed for every game played. </li>
-                <li>Each team must determine whether or not referees are registered prior to the start of each game. Upon request, referees officiating at any game must willingly and without bias, show documentation regarding their certification level and registration standing with the USSF to coach, assistant coach, or team captain of teams participating in that game. Prior to the game a coach may decide to postpone the game if the referees do not produce the requested documentation. The game is to be replayed at a later date. </li>
-                <li>Referees not complying with this section will be referred to the Disciplinary Committee. </li>
-            </ul>
-
-        </section>
-    </div>
-
-    <!---Footer-->
-    <div class="designedby">
-        <footer>
-            Norwich Youth Soccer League Website <span class="separator">|</span> Design by <a href="https://www.linkedin.com/in/wjulia91/" target="_blank">Julia Wilhelm</a>
-        </footer>
-    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script src="script.js"></script>
+    
 </body></html>
