@@ -26,6 +26,10 @@ body {
 }
 
 
+#menuSection a{
+    text-align: left;
+}
+
 
 /*--- Layout with Contained Floats
 
@@ -59,9 +63,6 @@ aside {
   */
 
 
-.topofthepage {
-    background: #000000;
-}
 
 .headertitle {
     padding-left: 15px;

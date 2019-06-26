@@ -6,7 +6,6 @@ var app = new Vue ({
     },
     
     methods: {
-        
         pathChange: function(pathNoChange){
             this.path = pathNoChange;
         }
