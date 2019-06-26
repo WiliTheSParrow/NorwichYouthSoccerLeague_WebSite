@@ -6,11 +6,6 @@ body {
 }
 
 
-.hide {
-    display: none;
-}
-
-
 .container {
     border: 3px solid red;
 }
