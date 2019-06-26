@@ -25,9 +25,15 @@ body {
     border: 1px solid yellow;
 }
 
-
+#menuSection{
+    border: 1px solid purple;
+    width: 100%;
+}
 #menuSection a{
     text-align: left;
+    
+    padding: 2%;
+    cursor: pointer;
 }
 
 

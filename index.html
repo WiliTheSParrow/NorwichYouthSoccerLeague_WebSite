@@ -24,20 +24,23 @@
 
         <!--Menu Section-->
         <div class="row">
-            <div id="menuSection" class="col-2 btn-group-vertical p-0">
+           <div class="col col-2  p-0">
+            <div id="menuSection" class="btn-group-vertical">
+                
 
-                <a href="#"  v-on:click="pathChange(1)">Home</a>
-                <a href="#"  v-on:click="pathChange(2)">About</a>
-                <a href="#"  v-on:click="pathChange(3)">Contact</a>
-                <a href="#"  v-on:click="pathChange(4)">Rules & policies</a>
-                <a href="#"  v-on:click="pathChange(5)">Game Info</a>
-                <a href="#"  v-on:click="pathChange(5)">Registration</a>
+                <a v-on:click="pathChange(1)">Home</a>
+                <a v-on:click="pathChange(2)">About</a>
+                <a v-on:click="pathChange(3)">Contact</a>
+                <a v-on:click="pathChange(4)">Game Info</a>
+                <a v-on:click="pathChange(5)">Registration</a>
+                <a v-on:click="pathChange(6)">Rules and policies</a>
 
-            </div>
+            </div></div>
 
-            <!--Content: Home/index-->
-            <div class="col-10">
+            
+            <div class="col col-10">
 
+                <!--Content: Home/index-->
                 <div v-if="path==1">
                     <h3>April 20</h3>
                     <p>Norwich Youth Soccer League Fundraiser</p>
@@ -46,7 +49,6 @@
                     <h3>May 5</h3>
                     <p>First Game of the Season (Check Game Schedule for details)</p>
                 </div>
-
 
                 <!--Content: About--->
                 <div v-if="path==2">
@@ -65,7 +67,6 @@
                     <p>The Norwich Youth Soccer League was established in 1995 to provide athletes residing in Norwich an environment in which to learn and play soccer. To be a member of Norwich Youth Soccer League, you must be between the ages of 4-12 and reside in a Norwich neighborhood. Norwich Youth Soccer League is ran by a small full-time staff, and relies on the generous volunteer time of parents and previous league members.</p>
 
                 </div>
-
 
                 <!--Content: Contact-->
                 <div v-if="path==3">
@@ -417,7 +418,7 @@
                 <!--Content: Rules & policies-->
                 <div v-if="path==6">
 
-                    <h3>Norwich Youth Soccer League Rules of play & policies</h3>
+                    <h3>Norwich Youth Soccer League Rules of play and policies</h3>
                     <p id="ruleinfo">FIFA rules shall govern Norwich Youth Soccer League play except as modified herein.</p>
 
                     <p class="dropdown">SPORTSMANSHIP</p>
@@ -532,8 +533,6 @@
                         <li>Each team must determine whether or not referees are registered prior to the start of each game. Upon request, referees officiating at any game must willingly and without bias, show documentation regarding their certification level and registration standing with the USSF to coach, assistant coach, or team captain of teams participating in that game. Prior to the game a coach may decide to postpone the game if the referees do not produce the requested documentation. The game is to be replayed at a later date. </li>
                         <li>Referees not complying with this section will be referred to the Disciplinary Committee. </li>
                     </ul>
-
-
                 </div>
             </div>
         </div>
