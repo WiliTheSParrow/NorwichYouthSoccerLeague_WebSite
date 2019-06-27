@@ -13,31 +13,35 @@
 </head>
 
 <body>
-    <div class="container" id="app">
-        <div class="row">
-            <div class="headertitle">Norwich Youth Soccer League</div>
-            <div class="headerimage"><img alt="Header image" src="img/design03.jpg">
-                <!--<div class="logo"><img alt="NYSL Logo image" src="img/nysl_logo1.png"></div>-->
+    <div id="app" class="pl-3">
+        <div id="topPart" class="row">
+            <div class="container-12">
+                <div class="row headertitle">Norwich Youth Soccer League</div>
+                <div class="row headerimage">
+                    <img alt="Header image" src="img/design03.jpg">
+                    <!--<div class="logo"><img alt="NYSL Logo image" src="img/nysl_logo1.png"></div>-->
+                </div>
+                <div class="row informationbar">Norwich Youth Soccer League Information Bar</div>
             </div>
-            <div class="informationbar">Norwich Youth Soccer League Information Bar</div>
         </div>
 
         <!--Menu Section-->
         <div class="row">
-           <div class="col col-2  p-0">
-            <div id="menuSection" class="btn-group-vertical">
-                
+            <div class="col col-2  p-0">
+                <div id="menuSection" class="btn-group-vertical">
 
-                <a v-on:click="pathChange(1)">Home</a>
-                <a v-on:click="pathChange(2)">About</a>
-                <a v-on:click="pathChange(3)">Contact</a>
-                <a v-on:click="pathChange(4)">Game Info</a>
-                <a v-on:click="pathChange(5)">Registration</a>
-                <a v-on:click="pathChange(6)">Rules and policies</a>
 
-            </div></div>
+                    <a v-on:click="pathChanger(1)">Home</a>
+                    <a v-on:click="pathChanger(2)">About</a>
+                    <a v-on:click="pathChanger(3)">Contact</a>
+                    <a v-on:click="pathChanger(4)">Game Info</a>
+                    <a v-on:click="pathChanger(5)">Registration</a>
+                    <a v-on:click="pathChanger(6)">Rules and policies</a>
 
-            
+                </div>
+            </div>
+
+
             <div class="col col-10">
 
                 <!--Content: Home/index-->
@@ -552,4 +556,6 @@
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script src="script.js"></script>
 
-</body></html>
+</body>
+
+</html>
