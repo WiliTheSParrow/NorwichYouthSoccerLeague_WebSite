@@ -2,7 +2,7 @@ var app = new Vue ({
     el: '#app',
     
     data: {
-        path: 1,
+        path: 6,
     },
     
     methods: {
