@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style/nysl_style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/3526fd308e.js"></script>
 </head>
 
@@ -422,35 +422,36 @@
                 <!--Content: Rules & policies-->
                 <div v-if="path==6">
 
+
                     <h3>Norwich Youth Soccer League Rules of play and policies</h3>
                     <p id="ruleinfo">FIFA rules shall govern Norwich Youth Soccer League play except as modified herein.</p>
                     <div id="collapsetitles">
-                        <p href="#sportsmanship" class="btn btn-primary btn-sm" data-toggle="collapse">SPORTSMANSHIP</p>
-                        <p href="#fifaregulations" class="btn btn-primary btn-sm" data-toggle="collapse">FIFA FIELD REGULATIONS</p>
-                        <p href="#equipment" class="btn btn-primary btn-sm" data-toggle="collapse">EQUIPMENT</p>
-                        <p href="#numberofplayers" class="btn btn-primary btn-sm" data-toggle="collapse">NUMBER OF PLAYERS</p>
-                        <p href="#substitutions" class="btn btn-primary btn-sm" data-toggle="collapse">SUBSTITUTIONS</p>
-                        <p href="#confiscplaypas" class="btn btn-primary btn-sm" data-toggle="collapse">CONFISCATED PLAYER PASSES</p>
-                        <p href="#allplay" class="btn btn-primary btn-sm" data-toggle="collapse">ALL-PLAY</p>
-                        <p href="#playersequipment" class="btn btn-primary btn-sm" data-toggle="collapse">PLAYERS’ EQUIPMENT</p>
-                        <p href="#mixedteams" class="btn btn-primary btn-sm" data-toggle="collapse">MIXED TEAMS</p>
-                        <p href="#coachingromthesidelines" class="btn btn-primary btn-sm" data-toggle="collapse">COACHING FROM THE SIDELINES</p>
-                        <p href="#gametermination" class="btn btn-primary btn-sm" data-toggle="collapse">GAME TERMINATION</p>
-                        <p href="#conditionsofreplaygames" class="btn btn-primary btn-sm" data-toggle="collapse">CONDITIONS OF REPLAY OF GAMES</p>
-                        <p href="#refereeresponsibles" class="btn btn-primary btn-sm" data-toggle="collapse">REFEREE RESPONSIBLITIES</p>
+                        <p v-on:click="collapseMenuCahnger(1)" href="#collapse1" class="btn btn-primary btn-sm" data-toggle="collapse">SPORTSMANSHIP</p>
+                        <p v-on:click="collapseMenuCahnger(2)" href="#collapse2" class="btn btn-primary btn-sm" data-toggle="collapse">FIFA FIELD REGULATIONS</p>
+                        <p v-on:click="collapseMenuCahnger(3)" href="#collapse3" class="btn btn-primary btn-sm" data-toggle="collapse">EQUIPMENT</p>
+                        <p v-on:click="collapseMenuCahnger(4)" href="#collapse4" class="btn btn-primary btn-sm" data-toggle="collapse">NUMBER OF PLAYERS</p>
+                        <p v-on:click="collapseMenuCahnger(5)" href="#collapse5" class="btn btn-primary btn-sm" data-toggle="collapse">SUBSTITUTIONS</p>
+                        <p v-on:click="collapseMenuCahnger(6)" href="#collapse6" class="btn btn-primary btn-sm" data-toggle="collapse">CONFISCATED PLAYER PASSES</p>
+                        <p v-on:click="collapseMenuCahnger(7)" href="#collapse7" class="btn btn-primary btn-sm" data-toggle="collapse">ALL-PLAY</p>
+                        <p v-on:click="collapseMenuCahnger(8)" href="#collapse8" class="btn btn-primary btn-sm" data-toggle="collapse">PLAYERS’ EQUIPMENT</p>
+                        <p v-on:click="collapseMenuCahnger(9)" href="#collapse9" class="btn btn-primary btn-sm" data-toggle="collapse">MIXED TEAMS</p>
+                        <p v-on:click="collapseMenuCahnger(10)" href="#collapse10" class="btn btn-primary btn-sm" data-toggle="collapse">COACHING FROM THE SIDELINES</p>
+                        <p v-on:click="collapseMenuCahnger(11)" href="#collapse11" class="btn btn-primary btn-sm" data-toggle="collapse">GAME TERMINATION</p>
+                        <p v-on:click="collapseMenuCahnger(12)" href="#collapse12" class="btn btn-primary btn-sm" data-toggle="collapse">CONDITIONS OF REPLAY OF GAMES</p>
+                        <p v-on:click="collapseMenuCahnger(13)" href="#collapse13" class="btn btn-primary btn-sm" data-toggle="collapse">REFEREE RESPONSIBLITIES</p>
                     </div>
 
 
 
 
-                    <div class="collapse" id="sportsmanship">
+                    <div v-if="collapseMenuPath==1" class="collapse" id="collapse1">
                         The common interest that members of the Association share is to inspire youth to practice the ideals of sportsmanship and fair play. Any player, coach, team, parent, spectator, administrator or referee whose behavior detracts from this purpose is subject to disciplinary action regardless of technical soccer background, expertise, accomplishments or standing.
                     </div>
 
 
 
 
-                    <ol class="collapse" id="fifaregulations">
+                    <ol v-if="collapseMenuPath==2" class="collapse" id="collapse2">
                         <li><a class="bold">DIMENSIONS.</a> FIFA Law 1 provides for flexible external field dimensions within a given maximum and minimum width and length. These dimensions should be adhered to for all fields used by teams under 12 and older.</li>
                         <li><a class="bold">COMPETITION FIELDS.</a> Fields used within the competition program must be a minimum of 100 x 60 yards. Leagues, districts or associations participating in the state competition program that are unable to provide a field that meets these minimum requirements must advise the State Competition Board which will assign its Fields Committee to inspect the field and recommend to the Board whether or not a waiver of the minimum dimensions should be granted. Teams from leagues, districts or associations that are unable to provide an acceptable field may be required to play all their games away.</li>
                         <li><a class="bold">FIELDS USED BY YOUNG AGE GROUPS.</a>
@@ -480,19 +481,19 @@
                     </ol>
 
 
-                    <ul class="collapse" id="equipment">
+                    <ul v-if="collapseMenuPath==3" class="collapse" id="collapse3">
                         <li>We will abide by and accept equipment standards as defined by FIFA, USSF and USYSA.</li>
                     </ul>
 
 
-                    <ul class="collapse" id="numberofplayers">
+                    <ul v-if="collapseMenuPath==4" class="collapse" id="collapse4">
                         <li><a class="bold">TEAM SIZE.</a> Except as noted below, team rosters shall consist of not less than eleven nor more than eighteen players. A team must have at least seven (7) players present and able to play before referees are permitted to start a sanctioned game. No more than eleven (11) players per team may be on the field at any one time during the game.</li>
                         <li><a class="bold">SIZE OF AGE GROUP TEAMS.</a> In order to give player’s maximum opportunity to develop in the game of soccer, U-6 through U-1O play modified rules and size of roster as stated in United States Youth Soccer Association (USYSA) rules. It is strongly recommended that U-6 and U-8 play 4 v 4. UYSA shall not sanction games involving teams under 10 or younger unless such games are conducted with not more than eight (8) players per side. (National rule 4036 section 2)</li>
                         <li>Recreational/Developmental players at other ages or where numbers in the playing area are low are strongly encouraged to play small-sided games on reduced field size.</li>
                     </ul>
 
 
-                    <ul class="collapse" id="substitutions">
+                    <ul v-if="collapseMenuPath==5" class="collapse" id="collapse5">
                         <li>Teams may make an unlimited number of substitutions at the times indicated below. A player who has been replaced may re-enter the game as a substitute at a later time.
                             <ol>
                                 <li>Prior to a throw-in your favor.</li>
@@ -507,12 +508,12 @@
                     </ul>
 
 
-                    <ul class="collapse" id="confiscplaypas">
+                    <ul v-if="collapseMenuPath==6" class="collapse" id="collapse6">
                         <li>Passes of any individual(s) ejected from any match shall be retained after the match by the referee. The pass of any individual who has received a third caution (yellow card) during a playing year shall be confiscated by the referee at the conclusion of the match in which the third caution was received. That player will be suspended from playing in the next game in which the offending participant would otherwise be eligible to participate. This process will continue so that for every third yellow card received during a playing year, the player will be suspended from playing in the next game (after the receipt of a third yellow card) for which the offending participate would otherwise be eligible to participate. The referee shall deliver all confiscated passes to the UYSA State Office within forty-eight (48) hours of the conclusion of the match. </li>
                     </ul>
 
 
-                    <ul class="collapse" id="allplay">
+                    <ul v-if="collapseMenuPath==7" class="collapse" id="collapse7">
                         <li>All-play means that every recreation player on every team shall play at least fifty percent of each game. Coaches in the competition program are encouraged to play their players 50% of each game.
                             <ul>
                                 <li>A Coach shall be permitted to not play a player 50% of each game under special circumstances, e.g., unexcused absences from practice and/or games, ungentlemanly conduct at practice and/or games, and injuries.</li>
@@ -521,18 +522,18 @@
                     </ul>
 
 
-                    <ul class="collapse" id="playersequipment">
+                    <ul v-if="collapseMenuPath==8" class="collapse" id="collapse8">
                         <li>Where the uniform colors of both teams are so similar that the referee orders a change, the designated home team must change to colors distinct from those of the opponent.</li>
                     </ul>
 
 
-                    <ul class="collapse" id="mixedteams">
+                    <ul v-if="collapseMenuPath==9" class="collapse" id="collapse9">
                         <li><a class="bold">GIRLS PLAYING ON BOYS’ TEAMS.</a> Girls are eligible to play on boys’ teams with parent/guardian permission. </li>
                         <li><a class="bold">TYPES OF TEAMS.</a> Teams with females only are Girls Teams. All others are Boys Teams.</li>
                     </ul>
 
-                    
-                    <ul class="collapse" id="coachingromthesidelines">
+
+                    <ul v-if="collapseMenuPath==10" class="collapse" id="collapse10">
                         <li>Coaching from the sidelines, i.e., giving direction to one’s own team on points of strategy and position, is permitted provided that:
                             <ol>
                                 <li>No mechanical, electrical or other devices are used to amplify the voice.</li>
@@ -544,13 +545,13 @@
                         </li>
                     </ul>
 
-                    
-                    <ul class="collapse" id="gametermination">
+
+                    <ul v-if="collapseMenuPath==11" class="collapse" id="collapse11">
                         <li>Any game terminated after 15 minutes into the second half by the referee by reason of the elements, or by reason of grave disorder on the part of the coaches, players or spectators of a team that is losing at the point that the game is terminated, shall stand as a completed game. If a team is ahead and the game is called because of their actions they will lose the game 1-0.</li>
                     </ul>
 
-                    
-                    <ul class="collapse" id="conditionsofreplaygames">
+
+                    <ul v-if="collapseMenuPath==12" class="collapse" id="collapse12">
                         <li>Any game which is required to be replayed as a result of any protest or appeal, shall be subject to the following conditions:
                             <ol>
                                 <li>The game shall be replayed on the same field, as was the suspended or protested game, unless otherwise agreed by the coaches.</li>
@@ -559,8 +560,8 @@
                             </ol>
                         </li>
                     </ul>
-                    
-                    <ul class="collapse" id="refereeresponsibles">
+
+                    <ul v-if="collapseMenuPath==13" class="collapse" id="collapse13">
                         <li>The referee shall verify the identity of the players and coaches with his/her player pass. He shall collect the passes of those players and coaches who are to participate in the game. The referee must allow no player into the game for whom he/she has no pass.</li>
                         <li>Upon completion of the game, the referee shall send his/her report to the UYSA offices within four (4) days, holidays excluded. If a coach or a player is ejected, the referee report form is required within forty-eight (48) hours along with the player/coach pass.
                         <li>A referee report form must be filed for every game played. </li>
