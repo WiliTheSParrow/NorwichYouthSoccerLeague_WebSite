@@ -21,7 +21,7 @@
                     <img alt="Header image" src="img/design03.jpg">
                     <!--<div class="logo"><img alt="NYSL Logo image" src="img/nysl_logo1.png"></div>-->
                 </div>
-                <div class="row informationbar">Norwich Youth Soccer League Information Bar</div>
+                <div class="row informationbar">{{pathTitle[path]}}</div>
             </div>
         </div>
 
@@ -31,12 +31,12 @@
                 <div id="menuSection" class="btn-group-vertical">
 
 
-                    <a v-on:click="pathChanger(1)">Home</a>
-                    <a v-on:click="pathChanger(2)">About</a>
-                    <a v-on:click="pathChanger(3)">Contact</a>
-                    <a v-on:click="pathChanger(4)">Game Info</a>
-                    <a v-on:click="pathChanger(5)">Registration</a>
-                    <a v-on:click="pathChanger(6)">Rules and policies</a>
+                    <a v-on:click="pathChanger(0)">Home</a>
+                    <a v-on:click="pathChanger(1)">About</a>
+                    <a v-on:click="pathChanger(2)">Contact</a>
+                    <a v-on:click="pathChanger(3)">Game Info</a>
+                    <a v-on:click="pathChanger(4)">Registration</a>
+                    <a v-on:click="pathChanger(5)">Rules and policies</a>
 
                 </div>
             </div>
@@ -45,7 +45,7 @@
             <div class="col col-10">
 
                 <!--Content: Home/index-->
-                <div v-if="path==1">
+                <div v-if="path==0">
                     <h3>April 20</h3>
                     <p>Norwich Youth Soccer League Fundraiser</p>
                     <h3>April 28</h3>
@@ -55,7 +55,7 @@
                 </div>
 
                 <!--Content: About--->
-                <div v-if="path==2">
+                <div v-if="path==1">
                     <h2>Mission</h2>
 
                     <p>To support young athletes living in Norwich and neigborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, specifically those skills around team cooperation and good sportsmanship.</p>
@@ -73,13 +73,13 @@
                 </div>
 
                 <!--Content: Contact-->
-                <div v-if="path==3">
+                <div v-if="path==2">
                     <p>Please e-mail us at info@witchysoccer.com</p>
                     <p>We will reply to your e-mail as soon as we can.</p>
                 </div>
 
                 <!--Content: Gameinfo-->
-                <div v-if="path==4">
+                <div v-if="path==3">
 
                     <h3>Spring and Summer Schedule</h3>
                     <a id="gameonsat">* All games take place on Saturday.</a>
@@ -242,7 +242,7 @@
                 </div>
 
                 <!--Content: Registration-->
-                <div v-if="path==5">
+                <div v-if="path==4">
 
                     <form action="show_data.html" method="get">
                         <div id="registratinform">
@@ -420,7 +420,7 @@
                 </div>
 
                 <!--Content: Rules & policies-->
-                <div v-if="path==6">
+                <div v-if="path==5">
 
 
                     <h3>Norwich Youth Soccer League Rules of play and policies</h3>
