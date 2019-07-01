@@ -46,6 +46,19 @@ body {
     cursor: pointer;
 }
 
+#topBtn {
+    position: fixed;
+    bottom: 1.5%;
+    right: 3%;
+    font-size: 22px;
+    background: #bbd18c;
+    color: #353b48;
+    font-family: cursive;
+    border: none;
+    cursor: pointer;
+    display: none;
+
+}
 
 /*--- Layout with Contained Floats
 
