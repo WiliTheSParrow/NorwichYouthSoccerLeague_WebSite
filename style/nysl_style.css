@@ -12,12 +12,12 @@
     border: 1px solid yellow;
 }
 
-img{
+img {
     border: 5px solid pink;
-    
+
 }
 
-#topPart{
+#topPart {
     border: 5px solid aqua;
     padding-left: 1%;
 }
@@ -30,34 +30,35 @@ body {
     text-shadow: 1px 4px 8px #000000;
 }
 
-#topPart{
+#topPart {
     background: #000000;
 }
 
 
-#menuSection{
+#menuSection {
     border: 1px solid purple;
     width: 100%;
 }
-#menuSection a{
+
+#menuSection a {
     text-align: left;
-    
+
     padding: 2%;
     cursor: pointer;
 }
 
 #topBtn {
+    font-family: cursive;
     position: fixed;
     bottom: 1.5%;
-    right: 3%;
+    right: 1.5%;
     font-size: 22px;
     background: #bbd18c;
-    color: #353b48;
-    font-family: cursive;
+    color: #353b48;  
     border: none;
     cursor: pointer;
     display: none;
-
+    border-radius: 25px;
 }
 
 /*--- Layout with Contained Floats
