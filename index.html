@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <title>Norwich Youth Soccer League</title>
     <link rel="icon" href="img/ballfavicon.png">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style/nysl_style.css">
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://kit.fontawesome.com/3526fd308e.js"></script>
 </head>
 
@@ -45,32 +45,42 @@
 
             <div class="col col-10">
 
-                <!--Content: Home/index-->
-                <div v-if="path==0">
-                    <h3>April 20</h3>
-                    <p>Norwich Youth Soccer League Fundraiser</p>
-                    <h3>April 28</h3>
-                    <p>Season Kick-off: Meet the Teams</p>
-                    <h3>May 5</h3>
-                    <p>First Game of the Season (Check Game Schedule for details)</p>
-                </div>
-
-                <!--Content: About--->
-                <div v-if="path==1">
-                    <h2>Mission</h2>
-
-                    <p>To support young athletes living in Norwich and neigborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, specifically those skills around team cooperation and good sportsmanship.</p>
+                <div id="barba-wrapper">
+                    <div class="barba-container">
 
 
-                    <h2>Vision</h2>
+                        <!--Content: Home/index-->
+                        <div v-if="path==0">
 
-                    <p>The Norwich Youth Soccer League aspires to develop strong, well-rounded, and mindful athletes through the building of character, self-discipline, and leadership.</p>
+                            <h3>April 20</h3>
+                            <p>Norwich Youth Soccer League Fundraiser</p>
+                            <h3>April 28</h3>
+                            <p>Season Kick-off: Meet the Teams</p>
+                            <h3>May 5</h3>
+                            <p>First Game of the Season (Check Game Schedule for details)</p>
+                        </div>
 
 
-                    <h2>General Information</h2>
 
-                    <p>The Norwich Youth Soccer League was established in 1995 to provide athletes residing in Norwich an environment in which to learn and play soccer. To be a member of Norwich Youth Soccer League, you must be between the ages of 4-12 and reside in a Norwich neighborhood. Norwich Youth Soccer League is ran by a small full-time staff, and relies on the generous volunteer time of parents and previous league members.</p>
+                        <!--Content: About--->
+                        <div v-if="path==1">
+                            <h2>Mission</h2>
 
+                            <p>To support young athletes living in Norwich and neigborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, specifically those skills around team cooperation and good sportsmanship.</p>
+
+
+                            <h2>Vision</h2>
+
+                            <p>The Norwich Youth Soccer League aspires to develop strong, well-rounded, and mindful athletes through the building of character, self-discipline, and leadership.</p>
+
+
+                            <h2>General Information</h2>
+
+                            <p>The Norwich Youth Soccer League was established in 1995 to provide athletes residing in Norwich an environment in which to learn and play soccer. To be a member of Norwich Youth Soccer League, you must be between the ages of 4-12 and reside in a Norwich neighborhood. Norwich Youth Soccer League is ran by a small full-time staff, and relies on the generous volunteer time of parents and previous league members.</p>
+
+                        </div>
+
+                    </div>
                 </div>
 
                 <!--Content: Contact-->
@@ -571,7 +581,9 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
+
         </div>
 
         <!---Footer-->
@@ -585,13 +597,12 @@
             </div>
         </div>
     </div>
-    
+
     <button id="topBtn"><i class="fas fa-arrow-circle-up"> scroll up</i></button>
 
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script src="script.js"></script>
+    
 
 </body></html>
