@@ -46,7 +46,7 @@ body {
 }
 
 #topPart {
-    background: #000000;
+    background: #2f3640;
 }
 
 #menuSection {
@@ -75,12 +75,6 @@ body {
     border-radius: 25px;
 }
 
-.headertitle {
-    padding-left: 15px;
-    font-size: 37px;
-    color: #bbd18c;
-    position: relative;
-}
 
 
 .informationbar {
@@ -237,4 +231,8 @@ table td {
 
 #themap {
     width: 500px;
+}
+
+#footerSection{
+    background: #2f3640;
 }
