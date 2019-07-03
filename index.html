@@ -19,10 +19,15 @@
     <div id="app" class="pl-3">
         <div id="topPart" class="row">
             <div class="container-12">
+               <!---
                 <div class="row headertitle">Norwich Youth Soccer League</div>
-                <div class="row headerimage">
-                    <img alt="Header image" src="img/design03.jpg">
-                    <!--<div class="logo"><img alt="NYSL Logo image" src="img/nysl_logo1.png"></div>-->
+--->                
+                <div class="row">
+                    
+                    <img class="col-2" id="logoimg" alt="NYSL Logo image" src="img/nysl_logo1.png">
+                   
+                    <img class="col-10" id="headerimg" alt="Header image" src="img/design03.jpg">
+                    
                 </div>
                 
             </div>
@@ -467,10 +472,10 @@
 
 
                     <div id="collapseRulesDescription">
+                       
                         <div v-if="collapseMenuPath==1" class="collapse" id="collapse1">
                             The common interest that members of the Association share is to inspire youth to practice the ideals of sportsmanship and fair play. Any player, coach, team, parent, spectator, administrator or referee whose behavior detracts from this purpose is subject to disciplinary action regardless of technical soccer background, expertise, accomplishments or standing.
                         </div>
-
 
 
 
@@ -504,17 +509,17 @@
                         </ol>
 
 
-                        <ul v-if="collapseMenuPath==3" class="collapse" id="collapse3">
-                            <li>We will abide by and accept equipment standards as defined by FIFA, USSF and USYSA.</li>
-                        </ul>
+                        <div v-if="collapseMenuPath==3" class="collapse" id="collapse3">
+                            <p>We will abide by and accept equipment standards as defined by FIFA, USSF and USYSA.</p>
+                        </div>
 
-
-                        <ul v-if="collapseMenuPath==4" class="collapse" id="collapse4">
+                        <div v-if="collapseMenuPath==4" class="collapse" id="collapse4">
+                       
                             <li><a class="bold">TEAM SIZE.</a> Except as noted below, team rosters shall consist of not less than eleven nor more than eighteen players. A team must have at least seven (7) players present and able to play before referees are permitted to start a sanctioned game. No more than eleven (11) players per team may be on the field at any one time during the game.</li>
                             <li><a class="bold">SIZE OF AGE GROUP TEAMS.</a> In order to give player’s maximum opportunity to develop in the game of soccer, U-6 through U-1O play modified rules and size of roster as stated in United States Youth Soccer Association (USYSA) rules. It is strongly recommended that U-6 and U-8 play 4 v 4. UYSA shall not sanction games involving teams under 10 or younger unless such games are conducted with not more than eight (8) players per side. (National rule 4036 section 2)</li>
                             <li>Recreational/Developmental players at other ages or where numbers in the playing area are low are strongly encouraged to play small-sided games on reduced field size.</li>
-                        </ul>
-
+                        
+                        </div>
 
                         <ul v-if="collapseMenuPath==5" class="collapse" id="collapse5">
                             <li>Teams may make an unlimited number of substitutions at the times indicated below. A player who has been replaced may re-enter the game as a substitute at a later time.
