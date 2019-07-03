@@ -5,18 +5,17 @@
     <meta charset="utf-8">
     <title>Norwich Youth Soccer League</title>
     <link rel="icon" href="img/ballfavicon.png">
-    
+
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style/nysl_style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://kit.fontawesome.com/3526fd308e.js"></script>
-    
 </head>
 
 <body>
-   
+
     <div id="app" class="pl-3">
         <div id="topPart" class="row">
             <div class="container-12">
@@ -25,7 +24,7 @@
                     <img alt="Header image" src="img/design03.jpg">
                     <!--<div class="logo"><img alt="NYSL Logo image" src="img/nysl_logo1.png"></div>-->
                 </div>
-                <div class="row informationbar animated fadeIn">{{pathTitle[path]}}</div>
+                
             </div>
         </div>
 
@@ -45,6 +44,7 @@
                     <a v-on:click="pathChanger(3)">Game Info</a>
                     <a v-on:click="pathChanger(4)">Registration</a>
                     <a v-on:click="pathChanger(5)">Rules and policies</a>
+
                 </div>
 
             </div>
@@ -58,7 +58,7 @@
 
                 <!--Content: Home/index-->
                 <div v-if="path==0" class="animated fadeIn">
-
+                    <h1>{{pathTitle[path]}}</h1>
                     <h3>April 20</h3>
                     <p>Norwich Youth Soccer League Fundraiser</p>
                     <h3>April 28</h3>
@@ -72,6 +72,7 @@
 
                 <!--Content: About--->
                 <div v-if="path==1" class="animated fadeIn">
+                   <h1>{{pathTitle[path]}}</h1>
                     <h2>Mission</h2>
 
                     <p>To support young athletes living in Norwich and neigborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, specifically those skills around team cooperation and good sportsmanship.</p>
@@ -93,14 +94,16 @@
 
 
                 <!--Content: Contact-->
+                
                 <div v-if="path==2" class="animated fadeIn">
+                   <h1>{{pathTitle[path]}}</h1>
                     <p>Please e-mail us at info@witchysoccer.com</p>
                     <p>We will reply to your e-mail as soon as we can.</p>
                 </div>
 
                 <!--Content: Gameinfo-->
                 <div v-if="path==3" class="animated fadeIn">
-
+                    <h1>{{pathTitle[path]}}</h1>
                     <h3>Spring and Summer Schedule</h3>
                     <a id="gameonsat">* All games take place on Saturday.</a>
                     <div class="gameinfotable">
@@ -263,7 +266,7 @@
 
                 <!--Content: Registration-->
                 <div v-if="path==4" class="animated fadeIn">
-
+                    <h1>{{pathTitle[path]}}</h1>
                     <form action="show_data.html" method="get">
                         <div id="registratinform">
                             <fieldset class="playersdata">
@@ -441,7 +444,7 @@
 
                 <!--Content: Rules & policies-->
                 <div v-if="path==5" class="animated fadeIn">
-
+                    <h1>{{pathTitle[path]}}</h1>
 
                     <h3>Norwich Youth Soccer League Rules of play and policies</h3>
                     <p id="ruleinfo">FIFA rules shall govern Norwich Youth Soccer League play except as modified herein.</p>
@@ -612,8 +615,11 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    
 
     <script src="/js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
-</body></html>
+</body>
+
+</html>

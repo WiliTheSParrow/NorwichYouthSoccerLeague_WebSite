@@ -1,10 +1,12 @@
 var app = new Vue({
     el: '#app',
 
+
     data: {
         path: 0,
         pathTitle: ["Norwich Youth Soccer League Home", "About Norwich Youth Soccer League", "Norwich Youth Soccer League Contact Information", "Norwich Youth Soccer League Game Information", "Registration Form", "Rules of Play & Policies"],
-        collapseMenuPath: 0
+        collapseMenuPath: 0,
+        show: true,
     },
 
 
@@ -12,14 +14,16 @@ var app = new Vue({
 
         pathChanger: function (newPath) {
             this.path = newPath;
+            this.show = false;
+
         },
 
         collapseMenuChanger: function (newMenu) {
             this.collapseMenuPath = newMenu;
-        }
+        },
     }
+})
 
-});
 
 //Scroll To Top Button:
 if (location.pathname != "show_data.html") {
