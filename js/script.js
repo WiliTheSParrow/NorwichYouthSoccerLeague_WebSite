@@ -4,7 +4,7 @@ var app = new Vue({
 
     data: {
         path: 0,
-        pathTitle: ["Norwich Youth Soccer League Home", "About Norwich Youth Soccer League", "Norwich Youth Soccer League Contact Information", "Norwich Youth Soccer League Game Information", "Registration Form", "Rules of Play & Policies"],
+        pathTitle: ["Welcome to Norwich Youth Soccer League! ⚽", "About Norwich Youth Soccer League", "Norwich Youth Soccer League Contact Information", "Norwich Youth Soccer League Game Information", "Registration Form", "Rules of Play & Policies"],
         collapseMenuPath: 0,
         show: true,
     },

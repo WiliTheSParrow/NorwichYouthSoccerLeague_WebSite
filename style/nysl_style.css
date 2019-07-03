@@ -7,13 +7,29 @@
 }
 
 
-.col {
-    border: 1px solid yellow;
+.col,
+.col-2,
+.col-3,
+.col-8,
+.col-9,
+.col-10 {
+    border: 3px solid red;
 }
+
+
 
 img {
     border: 5px solid pink;
+}
 
+#logoimgSection {
+    padding: 0px !important;
+    text-align: center;
+}
+
+#headerimgSection {
+    padding: 0px !important;
+    text-align: center !important;
 }
 
 #topPart {
@@ -31,11 +47,6 @@ body {
 
 #topPart {
     background: #000000;
-}
-
-#logoimg{
-    width: 100%;
-    height: 100%;
 }
 
 #menuSection {
@@ -57,7 +68,7 @@ body {
     right: 1.5%;
     font-size: 22px;
     background: #bbd18c;
-    color: #353b48;  
+    color: #353b48;
     border: none;
     cursor: pointer;
     display: none;
