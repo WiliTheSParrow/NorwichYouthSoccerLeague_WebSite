@@ -1,35 +1,33 @@
-.col,
-.col-1,
-.col-2,
-.col-3,
-.col-8,
-.col-9,
-.col-10 {
-    border: 2px solid red;
-}
-
-.row{
-    height: 100%;
-    
-}
-
-#logoimg {
-    position: absolute;
-}
-
-
-#headerSection {
-    text-align: center;
-}
-
-
 body {
     background: #2f3640;
     font-family: 'Dosis', sans-serif;
     color: #bbd18c;
     text-shadow: 1px 4px 8px #000000;
+    
 }
 
+.pl-3{
+    border: 2px solid black;
+}
+
+#menuSection{
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#logoimg{
+    position: absolute;
+}
+
+#headerSection{
+    padding: 0px !important;
+    text-align: center;
+    
+}
+
+#logoSection{
+    padding: 0px !important;
+}
 
 #menuSection {
     width: 100%;
@@ -56,26 +54,9 @@ body {
 }
 
 
-
-.informationbar {
-    background: black;
-    color: #facc3b;
-    font-size: 22px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-
-
-
 #designedby a {
     text-decoration: none;
     color: #bbd18c;
-}
-
-#onapage {
-    color: #facc3b;
-    text-decoration: underline;
 }
 
 
@@ -214,5 +195,5 @@ table td {
 }
 
 #footerSection {
-    background: #2f3640;
+    background: #000000;
 }
