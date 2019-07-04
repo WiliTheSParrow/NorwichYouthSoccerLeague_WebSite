@@ -1,62 +1,42 @@
-.container {
-    border: 3px solid red;
-}
-
-.row {
-    border: 2px solid blue;
-}
-
-
 .col,
+.col-1,
 .col-2,
 .col-3,
 .col-8,
 .col-9,
 .col-10 {
-    border: 3px solid red;
+    border: 2px solid red;
+}
+
+.row{
+    height: 100%;
+    
+}
+
+#logoimg {
+    position: absolute;
 }
 
 
-
-img {
-    border: 5px solid pink;
-}
-
-#logoimgSection {
-    padding: 0px !important;
+#headerSection {
     text-align: center;
-}
-
-#headerimgSection {
-    padding: 0px !important;
-    text-align: center !important;
-}
-
-#topPart {
-    border: 5px solid aqua;
-    padding-left: 1%;
 }
 
 
 body {
-    background: #353b48;
-    font-family: cursive;
+    background: #2f3640;
+    font-family: 'Dosis', sans-serif;
     color: #bbd18c;
     text-shadow: 1px 4px 8px #000000;
 }
 
-#topPart {
-    background: #2f3640;
-}
 
 #menuSection {
-    border: 1px solid purple;
     width: 100%;
 }
 
 #menuSection a {
     text-align: left;
-
     padding: 2%;
     cursor: pointer;
 }
@@ -233,6 +213,6 @@ table td {
     width: 500px;
 }
 
-#footerSection{
+#footerSection {
     background: #2f3640;
 }
