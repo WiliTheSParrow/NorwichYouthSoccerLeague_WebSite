@@ -6,9 +6,6 @@ body {
     
 }
 
-.pl-3{
-    border: 2px solid black;
-}
 
 #menuSection{
     border-top: 3px solid black;
@@ -22,7 +19,7 @@ body {
 #headerSection{
     padding: 0px !important;
     text-align: center;
-    
+    border: 3px solid black;
 }
 
 #logoSection{
@@ -195,5 +192,5 @@ table td {
 }
 
 #footerSection {
-    background: #000000;
+    border: 3px solid black;
 }
