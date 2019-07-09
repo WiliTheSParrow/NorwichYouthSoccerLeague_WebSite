@@ -9,28 +9,48 @@ body {
     text-shadow: 1px 4px 8px #000000;
 }
 
-#designTrick7{
+#designTrick7 {
     border-left: 4px solid black;
 }
+
+h1 {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid black;
+}
+
+h3 {
+    padding-bottom: 20px;
+}
+
 
 /*
 * === MENU SECTION ===
 */
 
-#menuSection {
+#menuSection1 {
     border-top: 3px solid black;
     border-right: 3px solid black;
 }
 
-#menuSection {
+#menuSection1 a {
+    font-size: 20px;
+    margin: 5%;
+    padding: 5%;
+    cursor: pointer;
     width: 100%;
 }
 
-#menuSection a {
-    text-align: left;
-    padding: 2%;
+#menuSection1 a:hover {
+    background: #bbd18c;
+    color: #353b48;
+    border: none;
     cursor: pointer;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
 }
+
 
 /*
 * === HEADER SECTION ===
@@ -55,10 +75,16 @@ body {
 * === CONTENT ===
 */
 
-#contentHome, #contentAbout, #contentContact, #contentGameInfo, #contentRegistration, #contentRulesPolicies{
+#contentHome,
+#contentAbout,
+#contentContact,
+#contentGameInfo,
+#contentRegistration,
+#contentRulesPolicies {
     padding: 20px;
     margin-right: 18%;
 }
+
 
 /*
 * — Game Info —
@@ -67,6 +93,7 @@ body {
 #gameonsat {
     text-decoration: underline;
     font-style: italic;
+    margin-bottom: 20px;
 }
 
 #othergameinfo {
@@ -121,21 +148,28 @@ table td {
     width: 10%;
 }
 
+caption {
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+
 /*
 * — Registration —
 */
 
-.registrationquestion {
-    font-weight: bold;
-    margin-left: 15px;
+fieldset {
+    margin-top: 10px;
 }
 
-.playersdata {
-    margin-top: 2%;
+.registrationquestion {
+    font-weight: bold;
 }
 
 .permission {
     padding-top: 10px;
+    text-align: justify;
+    padding-bottom: 10px;
 }
 
 .permission a {
@@ -170,11 +204,28 @@ table td {
     margin-bottom: 10px;
 }
 
+#submitButton {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    background: #bbd18c;
+    color: #353b48;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+#submitButton:hover {
+    background: #353b48;
+    color: #bbd18c;
+    border: 1px solid black;
+}
+
 
 /*
 * — Rules & policies —
 */
-
 
 #ruleinfo {
     font-style: italic;
@@ -203,6 +254,7 @@ li {
     margin-top: 0;
 }
 
+
 /*
 * === FOOTER STUFF ===
 */
@@ -215,6 +267,14 @@ li {
 #designedby a {
     text-decoration: none;
     color: #bbd18c;
+}
+
+#designedby a:hover {
+    background: #bbd18c;
+    color: #353b48;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
 }
 
 #designTrick1 {
@@ -243,11 +303,10 @@ li {
 }
 
 #topBtn {
-    font-family: cursive;
     position: fixed;
     bottom: 1.5%;
     right: 1.5%;
-    font-size: 22px;
+    font-size: 25px;
     background: #bbd18c;
     color: #353b48;
     border: none;

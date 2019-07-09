@@ -17,9 +17,9 @@
 <body>
 
     <div id="app" class="pl-3">
-        
+
         <div id="topPart" class="row">
-            <div class="col-3" id="logoSection">             
+            <div class="col-3" id="logoSection">
                 <img class="img-fluid" id="logoimg" alt="NYSL Logo image" src="img/NYSL_logo_05.png">
             </div>
             <div class="col-9" id="headerSection">
@@ -31,9 +31,9 @@
 
         <!--Menu Section-->
         <div class="row">
-           
-            <div id="menuSection" class="col col-2  p-0">
-                <div class="btn-group-vertical">
+
+            <div id="menuSection1" class="col">
+                <div class="btn-group-vertical" id="menuSection2">
                     <a v-on:click="pathChanger(0)">Home</a>
                     <a v-on:click="pathChanger(1)">About</a>
                     <a v-on:click="pathChanger(2)">Contact</a>
@@ -45,19 +45,19 @@
 
 
             <div class="col col-9">
-               
+
                 <!--Content: Home/index-->
                 <div v-if="path==0" class="animated fadeIn" id="contentHome">
                     <h1>{{pathTitle[path]}}</h1>
-                    <h3>April 20</h3>
+                    <h2>April 20</h2>
                     <p>Norwich Youth Soccer League Fundraiser</p>
-                    <h3>April 28</h3>
+                    <h2>April 28</h2>
                     <p>Season Kick-off: Meet the Teams</p>
-                    <h3>May 5</h3>
+                    <h2>May 5</h2>
                     <p>First Game of the Season (Check Game Schedule for details)</p>
                 </div>
 
-               
+
                 <!--Content: About--->
                 <div v-if="path==1" class="animated fadeIn" id="contentAbout">
                     <h1>{{pathTitle[path]}}</h1>
@@ -86,9 +86,9 @@
 
                 <!--Content: Gameinfo-->
                 <div v-if="path==3" class="animated fadeIn" id="contentGameInfo">
-                    <h2>{{pathTitle[path]}}</h2>
+                    <h1>{{pathTitle[path]}}</h1>
                     <h3>Spring and Summer Schedule</h3>
-                    <a id="gameonsat">* All games take place on Saturday.</a>
+                    <p id="gameonsat">* All games take place on Saturday.</p>
                     <div class="gameinfotable">
                         <table>
                             <tr>
@@ -252,7 +252,7 @@
                     <h1>{{pathTitle[path]}}</h1>
                     <form action="show_data.html" method="get">
                         <div id="registratinform">
-                            <fieldset class="playersdata">
+                            <fieldset>
                                 <label for="firstname">Player's First Name:</label>
                                 <input type="text" name="firstname" id="firstname">
                                 <label for="lastname">Last Name:</label>
@@ -306,7 +306,7 @@
                             </fieldset>
 
                             <div class="closequestion">
-                                <a class="registrationquestion">Which elementary schools do you live near?</a>
+                                <p class="registrationquestion">Which elementary schools do you live near?</p>
                                 <fieldset>
 
                                     <label for="firstclosestschool">First Closest School:</label>
@@ -335,7 +335,7 @@
                             </div>
 
                             <div class="positionquestion">
-                                <a class="registrationquestion">What position(s) do you normally play? (check all that apply)</a>
+                                <p class="registrationquestion">What position(s) do you normally play? (check all that apply)</p>
                                 <fieldset>
                                     <input type="checkbox" name="forward" value="Forward" id="forward">
                                     <label for="forward">Forward</label>
@@ -350,9 +350,7 @@
                                     <label for="goalkeeper">Goalkeeper</label>
                                 </fieldset>
 
-
-
-                                <a class="registrationquestion">What position(s) do you want to play? (check all that apply)</a>
+                                <p class="registrationquestion">What position(s) do you want to play? (check all that apply)</p>
                                 <fieldset>
                                     <input type="checkbox" name="forward2" value="forward2" id="forward2">
                                     <label for="forward2">Forward</label>
@@ -416,13 +414,11 @@
                                 <input type="text" name="signature" id="signature" required>
                                 <label for="authorizationdate">Date:</label>
                                 <input type="date" name="authorizationdate" id="authorizationdate">
-
                             </fieldset>
 
-                            <button name="submit">Submit Registration Form</button>
+                            <button id="submitButton" name="submit"> Submit Registration Form </button>
                         </div>
                     </form>
-
                 </div>
 
                 <!--Content: Rules & policies-->
@@ -577,30 +573,30 @@
 
                     </div>
                 </div>
-                
+
             </div>
-            
+
             <div class="col-1" id="designTrick7">
                 <p></p>
             </div>
-            
+
         </div>
 
 
 
         <!---Footer-->
         <div class="row">
-           <div class="col-2" id="designTrick1"></div>
+            <div class="col-2" id="designTrick1"></div>
             <div id="footerSection" class="col">
                 <footer class="page-footer font-small">
                     <div id="designedby" class="footer-copyright text-center py-3">
                         Norwich Youth Soccer League Website | Design by <a href="https://www.linkedin.com/in/wjulia91/" target="_blank">Julia Wilhelm</a>
-                    </div>    
+                    </div>
                 </footer>
             </div>
             <div class="col-2" id="designTrick2"></div>
         </div>
-        
+
         <div class="row">
             <div class="col-2" id="designTrick3"></div>
             <div class="col">
@@ -608,8 +604,8 @@
             </div>
             <div class="col-2" id="designTrick4"></div>
         </div>
-        
-         <div class="row">
+
+        <div class="row">
             <div class="col-2" id="designTrick5"></div>
             <div class="col">
                 <p></p>
@@ -618,12 +614,10 @@
         </div>
     </div>
 
-    <button id="topBtn"><i class="fas fa-arrow-circle-up"> scroll up</i></button>
+    <button id="topBtn"><i class="fas fa-arrow-circle-up"></i></button>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
-
-
     <script src="/js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
