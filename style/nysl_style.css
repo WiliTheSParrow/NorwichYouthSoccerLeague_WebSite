@@ -202,7 +202,6 @@ table td {
     border-top: 3px solid black;
     border-right: 3px solid black;
     border-bottom: 3px solid black;
- 
 }
 
 #designTrick2{
@@ -217,6 +216,11 @@ table td {
 
 #designTrick4{
     border-left: 3px solid black;
-    border-bottom: 3px solid black;
+    
    
+}
+
+#designTrick6{
+    border-left: 3px solid black;
+    height: 3vw;
 }
