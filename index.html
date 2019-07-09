@@ -18,51 +18,34 @@
 
     <div id="app" class="pl-3">
         
-
         <div id="topPart" class="row">
-
-            <div class="col-3" id="logoSection">
-               
+            <div class="col-3" id="logoSection">             
                 <img class="img-fluid" id="logoimg" alt="NYSL Logo image" src="img/NYSL_logo_05.png">
             </div>
             <div class="col-9" id="headerSection">
                 <img class="img-fluid" id="headerimg" alt="Header image" src="img/design03.jpg">
             </div>
-
         </div>
 
 
 
-
-
         <!--Menu Section-->
-
-
         <div class="row">
+           
             <div id="menuSection" class="col col-2  p-0">
-
-
-
                 <div class="btn-group-vertical">
-
                     <a v-on:click="pathChanger(0)">Home</a>
                     <a v-on:click="pathChanger(1)">About</a>
                     <a v-on:click="pathChanger(2)">Contact</a>
                     <a v-on:click="pathChanger(3)">Game Info</a>
                     <a v-on:click="pathChanger(4)">Registration</a>
                     <a v-on:click="pathChanger(5)">Rules and policies</a>
-
                 </div>
-
             </div>
 
 
             <div class="col col-10">
-
-
-
-
-
+               
                 <!--Content: Home/index-->
                 <div v-if="path==0" class="animated fadeIn">
                     <h1>{{pathTitle[path]}}</h1>
@@ -74,9 +57,7 @@
                     <p>First Game of the Season (Check Game Schedule for details)</p>
                 </div>
 
-
-
-
+               
                 <!--Content: About--->
                 <div v-if="path==1" class="animated fadeIn">
                     <h1>{{pathTitle[path]}}</h1>

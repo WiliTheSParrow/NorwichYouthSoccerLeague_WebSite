@@ -1,40 +1,12 @@
+/*
+* === BODY & BASIC ===
+*/
+
 body {
     background: #2f3640;
     font-family: 'Dosis', sans-serif;
     color: #bbd18c;
-    text-shadow: 1px 4px 8px #000000;
-    
-}
-
-
-
-#menuSection{
-    border-top: 3px solid black;
-    border-right: 3px solid black;
-}
-
-#logoimg{
-    position: absolute;
-}
-
-#headerSection{
-    padding: 0px !important;
-    text-align: center;
-    border: 3px solid black;
-}
-
-#logoSection{
-    padding: 0px !important;
-}
-
-#menuSection {
-    width: 100%;
-}
-
-#menuSection a {
-    text-align: left;
-    padding: 2%;
-    cursor: pointer;
+    text-shadow: 1px 4px 8px #000000;   
 }
 
 #topBtn {
@@ -51,39 +23,51 @@ body {
     border-radius: 25px;
 }
 
+/*
+* === MENU SECTION ===
+*/
 
-#designedby a {
-    text-decoration: none;
-    color: #bbd18c;
+#menuSection{
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#menuSection {
+    width: 100%;
+}
+
+#menuSection a {
+    text-align: left;
+    padding: 2%;
+    cursor: pointer;
+}
+
+/*
+* === HEADER SECTION ===
+*/
+
+#logoimg{
+    position: absolute;
+}
+
+#headerSection{
+    padding: 0px !important;
+    text-align: center;
+    border: 3px solid black;
+}
+
+#logoSection{
+    padding: 0px !important;
 }
 
 
-#ruleinfo {
-    font-style: italic;
-    margin-bottom: 3%;
-}
+/*
+* === CONTENT ===
+*/
 
-.bold {
-    font-weight: bold;
-}
-
-.dropdown {
-    margin-bottom: 0;
-    margin-top: 10px;
-    text-decoration: underline;
-}
-
-ul {
-    margin-top: 0;
-}
-
-ol {
-    margin-top: 0;
-}
-
-li {
-    margin-top: 0;
-}
+/*
+* — Game Info —
+*/
 
 #gameonsat {
     text-decoration: underline;
@@ -106,6 +90,10 @@ li {
 
 #gameinfocontact #gameinfoemail {
     margin-left: 20%;
+}
+
+.mapoflocations {
+    margin-top: 30px;
 }
 
 table {
@@ -138,6 +126,9 @@ table td {
     width: 10%;
 }
 
+/*
+* — Registration —
+*/
 
 .registrationquestion {
     font-weight: bold;
@@ -184,18 +175,51 @@ table td {
     margin-bottom: 10px;
 }
 
-.mapoflocations {
-    margin-top: 30px;
+
+/*
+* — Rules & policies —
+*/
+
+
+#ruleinfo {
+    font-style: italic;
+    margin-bottom: 3%;
 }
 
-#themap {
-    width: 500px;
+.bold {
+    font-weight: bold;
 }
+
+.dropdown {
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+ul {
+    margin-top: 0;
+}
+
+ol {
+    margin-top: 0;
+}
+
+li {
+    margin-top: 0;
+}
+
+/*
+* === FOOTER STUFF ===
+*/
 
 #footerSection {
     border-top: 3px solid black;  
     border-bottom: 3px solid black;
+}
 
+#designedby a {
+    text-decoration: none;
+    color: #bbd18c;
 }
 
 #designTrick1{
@@ -215,9 +239,7 @@ table td {
 }
 
 #designTrick4{
-    border-left: 3px solid black;
-    
-   
+    border-left: 3px solid black;   
 }
 
 #designTrick6{
