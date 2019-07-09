@@ -44,10 +44,10 @@
             </div>
 
 
-            <div class="col col-10">
+            <div class="col col-9">
                
                 <!--Content: Home/index-->
-                <div v-if="path==0" class="animated fadeIn">
+                <div v-if="path==0" class="animated fadeIn" id="contentHome">
                     <h1>{{pathTitle[path]}}</h1>
                     <h3>April 20</h3>
                     <p>Norwich Youth Soccer League Fundraiser</p>
@@ -59,7 +59,7 @@
 
                
                 <!--Content: About--->
-                <div v-if="path==1" class="animated fadeIn">
+                <div v-if="path==1" class="animated fadeIn" id="contentAbout">
                     <h1>{{pathTitle[path]}}</h1>
                     <h2>Mission</h2>
 
@@ -78,15 +78,14 @@
                 </div>
 
                 <!--Content: Contact-->
-
-                <div v-if="path==2" class="animated fadeIn">
+                <div v-if="path==2" class="animated fadeIn" id="contentContact">
                     <h1>{{pathTitle[path]}}</h1>
                     <p>Please e-mail us at info@witchysoccer.com</p>
                     <p>We will reply to your e-mail as soon as we can.</p>
                 </div>
 
                 <!--Content: Gameinfo-->
-                <div v-if="path==3" class="animated fadeIn">
+                <div v-if="path==3" class="animated fadeIn" id="contentGameInfo">
                     <h2>{{pathTitle[path]}}</h2>
                     <h3>Spring and Summer Schedule</h3>
                     <a id="gameonsat">* All games take place on Saturday.</a>
@@ -249,7 +248,7 @@
                 </div>
 
                 <!--Content: Registration-->
-                <div v-if="path==4" class="animated fadeIn">
+                <div v-if="path==4" class="animated fadeIn" id="contentRegistration">
                     <h1>{{pathTitle[path]}}</h1>
                     <form action="show_data.html" method="get">
                         <div id="registratinform">
@@ -427,7 +426,7 @@
                 </div>
 
                 <!--Content: Rules & policies-->
-                <div v-if="path==5" class="animated fadeIn">
+                <div v-if="path==5" class="animated fadeIn" id="contentRulesPolicies">
                     <h1>{{pathTitle[path]}}</h1>
 
                     <h3>Norwich Youth Soccer League Rules of play and policies</h3>
@@ -578,7 +577,13 @@
 
                     </div>
                 </div>
+                
             </div>
+            
+            <div class="col-1" id="designTrick7">
+                <p></p>
+            </div>
+            
         </div>
 
 

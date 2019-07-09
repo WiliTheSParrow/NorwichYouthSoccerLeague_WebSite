@@ -6,28 +6,18 @@ body {
     background: #2f3640;
     font-family: 'Dosis', sans-serif;
     color: #bbd18c;
-    text-shadow: 1px 4px 8px #000000;   
+    text-shadow: 1px 4px 8px #000000;
 }
 
-#topBtn {
-    font-family: cursive;
-    position: fixed;
-    bottom: 1.5%;
-    right: 1.5%;
-    font-size: 22px;
-    background: #bbd18c;
-    color: #353b48;
-    border: none;
-    cursor: pointer;
-    display: none;
-    border-radius: 25px;
+#designTrick7{
+    border-left: 4px solid black;
 }
 
 /*
 * === MENU SECTION ===
 */
 
-#menuSection{
+#menuSection {
     border-top: 3px solid black;
     border-right: 3px solid black;
 }
@@ -46,17 +36,17 @@ body {
 * === HEADER SECTION ===
 */
 
-#logoimg{
+#logoimg {
     position: absolute;
 }
 
-#headerSection{
+#headerSection {
     padding: 0px !important;
     text-align: center;
     border: 3px solid black;
 }
 
-#logoSection{
+#logoSection {
     padding: 0px !important;
 }
 
@@ -64,6 +54,11 @@ body {
 /*
 * === CONTENT ===
 */
+
+#contentHome, #contentAbout, #contentContact, #contentGameInfo, #contentRegistration, #contentRulesPolicies{
+    padding: 20px;
+    margin-right: 18%;
+}
 
 /*
 * — Game Info —
@@ -213,7 +208,7 @@ li {
 */
 
 #footerSection {
-    border-top: 3px solid black;  
+    border-top: 3px solid black;
     border-bottom: 3px solid black;
 }
 
@@ -222,27 +217,41 @@ li {
     color: #bbd18c;
 }
 
-#designTrick1{
+#designTrick1 {
     border-top: 3px solid black;
     border-right: 3px solid black;
     border-bottom: 3px solid black;
 }
 
-#designTrick2{
+#designTrick2 {
     border-left: 3px solid black;
     border-bottom: 3px solid black;
 }
 
-#designTrick3{
+#designTrick3 {
     border-right: 3px solid black;
     height: 3vw;
 }
 
-#designTrick4{
-    border-left: 3px solid black;   
+#designTrick4 {
+    border-left: 3px solid black;
 }
 
-#designTrick6{
+#designTrick6 {
     border-left: 3px solid black;
     height: 3vw;
+}
+
+#topBtn {
+    font-family: cursive;
+    position: fixed;
+    bottom: 1.5%;
+    right: 1.5%;
+    font-size: 22px;
+    background: #bbd18c;
+    color: #353b48;
+    border: none;
+    cursor: pointer;
+    display: none;
+    border-radius: 25px;
 }
