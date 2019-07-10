@@ -1,4 +1,4 @@
-# Norwich Youth Soccer League Website
+# Norwich Youth Soccer League Website ⚽
 <img src="./img/NYSL_logo_05.png" width="30%" height="30%" align="right">
 > A single page website for a fictional youth football team using Vue.js. 
  
@@ -23,7 +23,7 @@ The Norwich Youth Soccer League Website is a website made for a fictional footba
 * Bootstrap
 * Firebase
 
-## Click on the link below to check out this project
+## Click on the link below to check out this project 🧙🏻‍♀️
 <a href="https://nyscwebpage.firebaseapp.com/">https://nyscwebpage.firebaseapp.com/</a>
 
 ## Features
