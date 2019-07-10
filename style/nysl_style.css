@@ -1,5 +1,5 @@
 /*
-* === BODY & BASIC ===
+* === BASIC ===
 */
 
 body {
@@ -254,6 +254,15 @@ li {
     margin-top: 0;
 }
 
+#collapsetitles{
+    position:relative;
+}
+
+#collapseRulesDescription{
+    position:relative;
+    padding-top: 10px;
+}
+
 #collapsetitles p {
     background: #bbd18c;
     color: #353b48;
@@ -262,6 +271,17 @@ li {
     border-radius: 25px;
     font-weight: bold;
 }
+
+#collapsetitles p:hover{
+    background: #353b48;
+    color: #bbd18c;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
 
 .collapse{
     text-align: justify;
