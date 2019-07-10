@@ -254,12 +254,12 @@ li {
     margin-top: 0;
 }
 
-#collapsetitles{
-    position:relative;
+#collapsetitles {
+    position: relative;
 }
 
-#collapseRulesDescription{
-    position:relative;
+#collapseRulesDescription {
+    position: relative;
     padding-top: 10px;
 }
 
@@ -272,7 +272,7 @@ li {
     font-weight: bold;
 }
 
-#collapsetitles p:hover{
+#collapsetitles p:hover {
     background: #353b48;
     color: #bbd18c;
     border: none;
@@ -283,7 +283,7 @@ li {
 }
 
 
-.collapse{
+.collapse {
     text-align: justify;
     width: 110%;
 }

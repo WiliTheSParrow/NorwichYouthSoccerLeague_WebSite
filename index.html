@@ -15,9 +15,7 @@
 </head>
 
 <body>
-
     <div id="app" class="pl-3">
-
         <div id="topPart" class="row">
             <div class="col-3" id="logoSection">
                 <img class="img-fluid" id="logoimg" alt="NYSL Logo image" src="img/NYSL_logo_05.png">
@@ -26,12 +24,8 @@
                 <img class="img-fluid" id="headerimg" alt="Header image" src="img/design03.jpg">
             </div>
         </div>
-
-
-
         <!--Menu Section-->
         <div class="row">
-
             <div id="menuSection1" class="col">
                 <div class="btn-group-vertical" id="menuSection2">
                     <a v-on:click="pathChanger(0)">Home</a>
@@ -42,10 +36,7 @@
                     <a v-on:click="pathChanger(5)">Rules and policies</a>
                 </div>
             </div>
-
-
             <div class="col col-9">
-
                 <!--Content: Home/index-->
                 <div v-if="path==0" class="animated fadeIn" id="contentHome">
                     <h1>{{pathTitle[path]}}</h1>
@@ -56,34 +47,22 @@
                     <h2>May 5</h2>
                     <p>First Game of the Season (Check Game Schedule for details)</p>
                 </div>
-
-
                 <!--Content: About--->
                 <div v-if="path==1" class="animated fadeIn" id="contentAbout">
                     <h1>{{pathTitle[path]}}</h1>
                     <h2>Mission</h2>
-
                     <p>To support young athletes living in Norwich and neigborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, specifically those skills around team cooperation and good sportsmanship.</p>
-
-
                     <h2>Vision</h2>
-
                     <p>The Norwich Youth Soccer League aspires to develop strong, well-rounded, and mindful athletes through the building of character, self-discipline, and leadership.</p>
-
-
                     <h2>General Information</h2>
-
                     <p>The Norwich Youth Soccer League was established in 1995 to provide athletes residing in Norwich an environment in which to learn and play soccer. To be a member of Norwich Youth Soccer League, you must be between the ages of 4-12 and reside in a Norwich neighborhood. Norwich Youth Soccer League is ran by a small full-time staff, and relies on the generous volunteer time of parents and previous league members.</p>
-
                 </div>
-
                 <!--Content: Contact-->
                 <div v-if="path==2" class="animated fadeIn" id="contentContact">
                     <h1>{{pathTitle[path]}}</h1>
                     <p>Please e-mail us at info@witchysoccer.com</p>
                     <p>We will reply to your e-mail as soon as we can.</p>
                 </div>
-
                 <!--Content: Gameinfo-->
                 <div v-if="path==3" class="animated fadeIn" id="contentGameInfo">
                     <h1>{{pathTitle[path]}}</h1>
@@ -234,7 +213,6 @@
                     <div class="mapoflocations">
                         <iframe src="https://www.google.com/maps/d/embed?mid=100yE5eJ1WQ6-rRkl134Fr1B4DeIXMLIb" width="640" height="480"></iframe>
                     </div>
-
                     <div id="othergameinfo">
                         <p><a class="bold">Facility Type:</a> Outdoor</p>
                         <p><a class="bold">Additional Information:</a> If deemed necessary by Norwich Youth Soccer League, games may be shortened or cancelled due to extreme weather conditions.</p>
@@ -244,9 +222,7 @@
                             <p id="gameinfoemail"><a class="bold">Email: </a>info@witchysoccer.com</p>
                         </div>
                     </div>
-
                 </div>
-
                 <!--Content: Registration-->
                 <div v-if="path==4" class="animated fadeIn" id="contentRegistration">
                     <h1>{{pathTitle[path]}}</h1>
@@ -311,7 +287,6 @@
 
                                     <label for="firstclosestschool">First Closest School:</label>
                                     <select name="firstclosestschool" id="firstclosestschool">
-
                                         <option value="AJ Katzenmaier">Norwich Primary Academy</option>
                                         <option value="Greenbay">Eaton Primary School</option>
                                         <option value="Howard A Yeager">Lakenham Primary School and Nursery</option>
@@ -319,10 +294,8 @@
                                         <option value="North Elementary">Trowse Primary School</option>
                                         <option value="South Elementary">Free School Norwich</option>
                                     </select>
-
                                     <label for="secondclosestschool">Second Closest School:</label>
                                     <select name="secondclosestschool" id="secondclosestschool">
-
                                         <option value="AJ Katzenmaier">Norwich Primary Academy</option>
                                         <option value="Greenbay">Eaton Primary School</option>
                                         <option value="Howard A Yeager">Lakenham Primary School and Nursery</option>
@@ -330,52 +303,39 @@
                                         <option value="North Elementary">Trowse Primary School</option>
                                         <option value="South Elementary">Free School Norwich</option>
                                     </select>
-
                                 </fieldset>
                             </div>
-
                             <div class="positionquestion">
                                 <p class="registrationquestion">What position(s) do you normally play? (check all that apply)</p>
                                 <fieldset>
                                     <input type="checkbox" name="forward" value="Forward" id="forward">
                                     <label for="forward">Forward</label>
-
                                     <input type="checkbox" name="defense" value="defense" id="defense">
                                     <label for="defense">Defense</label>
-
                                     <input type="checkbox" name="midfield" value="midfield" id="midfield">
                                     <label for="midfield">Midfield</label>
-
                                     <input type="checkbox" name="goalkeeper" value="goalkeeper" id="goalkeeper">
                                     <label for="goalkeeper">Goalkeeper</label>
                                 </fieldset>
-
                                 <p class="registrationquestion">What position(s) do you want to play? (check all that apply)</p>
                                 <fieldset>
                                     <input type="checkbox" name="forward2" value="forward2" id="forward2">
                                     <label for="forward2">Forward</label>
-
                                     <input type="checkbox" name="defense2" value="defense2" id="defense2">
                                     <label for="defense2">Defense</label>
-
                                     <input type="checkbox" name="midfield2" value="midfield2" id="midfield2">
                                     <label for="midfield2">Midfield</label>
-
                                     <input type="checkbox" name="goalkeeper2" value="goalkeeper2" id="goalkeeper2">
                                     <label for="goalkeeper2">Goalkeeper</label>
                                 </fieldset>
                             </div>
-
                             <fieldset>
                                 <input type="checkbox" name="uniform" value="yes" id="uniform">
                                 <label for="uniform">Already Have a Uniform</label>
                             </fieldset>
-
                             <fieldset>
-
                                 <label for="jerseysize">Jersey Size:</label>
                                 <select name="jerseysize" id="jerseysize">
-
                                     <option value="Youth Small">Youth Small</option>
                                     <option value="Youth Medium">Youth Medium</option>
                                     <option value="Youth Large">Youth Large</option>
@@ -384,10 +344,8 @@
                                     <option value="Large">Large</option>
                                     <option value="Extra-Large">Extra-Large</option>
                                 </select>
-
                                 <label for="shortsize">Shorts Size:</label>
                                 <select name="shortsize" id="shortsize">
-
                                     <option value="Youth Small">Youth Small</option>
                                     <option value="Youth Medium">Youth Medium</option>
                                     <option value="Youth Large">Youth Large</option>
@@ -397,7 +355,6 @@
                                     <option value="Extra-Large">Extra-Large</option>
                                 </select>
                             </fieldset>
-
                             <fieldset class="permission">
                                 <a id="permissiontitle">Permission to Play</a>
                                 <a>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
@@ -428,7 +385,7 @@
                     <h3>Norwich Youth Soccer League Rules of play and policies</h3>
                     <p id="ruleinfo">FIFA rules shall govern Norwich Youth Soccer League play except as modified herein.</p>
                     <div class="row btn-group-vertical" id="collapsetitles">
-                        <div class="col-6">
+                        <div class="col">
                             <p v-on:click="collapseMenuChanger(1)" href="#collapse1" class="btn btn-primary btn-sm" data-toggle="collapse">SPORTSMANSHIP</p>
                             <p v-on:click="collapseMenuChanger(2)" href="#collapse2" class="btn btn-primary btn-sm" data-toggle="collapse">FIFA FIELD REGULATIONS</p>
                             <p v-on:click="collapseMenuChanger(3)" href="#collapse3" class="btn btn-primary btn-sm" data-toggle="collapse">EQUIPMENT</p>
@@ -635,4 +592,6 @@
     <script src="/js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
-</body></html>
+</body>
+
+</html>
