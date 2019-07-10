@@ -12,7 +12,7 @@
 * [Contact](#contact)
 
 ## General info
-The Norwich Youth Soccer League Website is a website made for a fictional football team for young candidates. This project was one of my first adventures to Web Development and to learn HTML, CSS, Javascript, Bootstrap, Vue.js, web design, Firebase, tricks and more. NYSL is my second webpage available online.
+The Norwich Youth Soccer League Website is a website made for a fictional football team for young candidates. This project was one of my first adventures to Web Development and to learn HTML, CSS, Javascript, Bootstrap, Vue.js, web design, Firebase and more. NYSL is my second webpage available online.
 
 ## Technologies
 * Vue.js
