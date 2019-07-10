@@ -1,5 +1,5 @@
 # Norwich Youth Soccer League Website
-![NYSLLogo](/img/NYSL_logo_05.png){:height="700px" width="400px"}
+<img src="./img/NYSL_logo_05.png" width="400" height="790">
 > A single page website for a fictional youth football team using Vue.js. 
  
 
