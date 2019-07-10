@@ -254,6 +254,19 @@ li {
     margin-top: 0;
 }
 
+#collapsetitles p {
+    background: #bbd18c;
+    color: #353b48;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.collapse{
+    text-align: justify;
+    width: 110%;
+}
 
 /*
 * === FOOTER STUFF ===
